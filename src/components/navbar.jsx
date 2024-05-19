@@ -1,41 +1,35 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import styled from "@emotion/styled";
-import { Button } from "@mui/material";
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import Divider from "@mui/material/Divider";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import { TawkContext } from "../providers";
-import Logo from '../images/Logo.jpg'
-
-
-
-
-
-
-
-
-import React from 'react'
+import * as React from "react"
+import AppBar from "@mui/material/AppBar"
+import Toolbar from "@mui/material/Toolbar"
+import Typography from "@mui/material/Typography"
+import styled from "@emotion/styled"
+import { Button } from "@mui/material"
+import Box from "@mui/material/Box"
+import Drawer from "@mui/material/Drawer"
+import Divider from "@mui/material/Divider"
+import List from "@mui/material/List"
+import ListItem from "@mui/material/ListItem"
+import ListItemButton from "@mui/material/ListItemButton"
+import ListItemText from "@mui/material/ListItemText"
+import IconButton from "@mui/material/IconButton"
+import MenuIcon from "@mui/icons-material/Menu"
+import { TawkContext } from "../providers"
+import BusinessName from "../images/business_name.png"
+import TopBar from "./topbar"
 
 const Navbar = () => {
   return (
     <>
-    <section></section>
+      <div>
+        <TopBar />
+      </div>
+      <div>
+        <AppNavBar />
+      </div>
     </>
   )
 }
-export default Navbar;
-
-
-
+export default Navbar
 
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
@@ -43,15 +37,15 @@ const ListItemButtonStyle = styled(ListItemButton)`
   &:hover {
     color: blue;
   }
-`;
+`
 
 const AppBarStyle = styled(AppBar)`
   height: 100px;
-  background: #101010;
-  position: fixed;
-`;
+  background: #ffffff;
+  position: static;
+`
 const LinksStyle = styled.a`
-  color: white;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   margin-left: 16px;
@@ -59,32 +53,33 @@ const LinksStyle = styled.a`
   &:hover {
     color: grey;
   }
-`;
+`
 const BookButtonStyle = styled(Button)`
-  color: black;
+  color: #000000;
   margin-left: 16px;
-  background: #499caf;
+  background: #e9e8e8;
   white-space: nowrap;
   &:hover {
-    background: #4787A0;
+    background: #bbbbbb;
   }
-`;
+`
 
-const drawerWidth = 240;
+const drawerWidth = 240
 
-const AppNavBar = (props) => {
-  const { tawkMessenger } = React.useContext(TawkContext);
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+const AppNavBar = props => {
+  const { tawkMessenger } = React.useContext(TawkContext)
+  const { window } = props
+  const [mobileOpen, setMobileOpen] = React.useState(false)
 
   const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
+    setMobileOpen(prevState => !prevState)
+  }
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2}}>
-      Lonaxa Auto Spa
+      <Typography variant="h6" sx={{ my: 2 }}>
+          <img src={BusinessName} width={180} style={{marginLeft:"auto", marginRight:"auto"}} />
+        
       </Typography>
       <Divider />
       <List>
@@ -118,10 +113,10 @@ const AppNavBar = (props) => {
         </ListItem>
       </List>
     </Box>
-  );
+  )
 
   const container =
-    window !== undefined ? () => window().document.body : undefined;
+    window !== undefined ? () => window().document.body : undefined
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -131,26 +126,32 @@ const AppNavBar = (props) => {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2,color:"white" ,display: { md: "none" } }}
+            sx={{ mr: 2, color: "dark", display: { md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div">
-            <div href="/" style={{ color: "white", textDecoration: "none", display:"flex" }}>
-            
-              <img
-                src={Logo}
-                width={180}
-                height={100}
-                alt="crown logo"
-              />
-             
+            <div
+              href="/"
+              style={{
+                color: "black",
+                textDecoration: "none",
+                display: "flex",
+              }}
+            >
+              <img src={BusinessName} width={180} />
+              {/* <span style={{ fontFamily: "sans-serif" }}>Daily Details </span>
+              &nbsp;Ottawa */}
             </div>
           </Typography>
 
           <Box
-            sx={{ mr: 2, display: { xs: "none", md: "block" }, whiteSpace:"nowrap" }}
-            style={{ marginLeft: "auto"}}
+            sx={{
+              mr: 2,
+              display: { xs: "none", md: "block" },
+              whiteSpace: "nowrap",
+            }}
+            style={{ marginLeft: "auto" }}
           >
             <LinksStyle href="#About">About</LinksStyle>
             <LinksStyle href="#Packages">Packages</LinksStyle>
@@ -159,7 +160,7 @@ const AppNavBar = (props) => {
             <LinksStyle href="#Gallery">Gallery</LinksStyle>
             <BookButtonStyle
               onClick={() => {
-                tawkMessenger.toggle();
+                tawkMessenger.toggle()
               }}
               variant="contained"
             >
@@ -172,7 +173,7 @@ const AppNavBar = (props) => {
           >
             <BookButtonStyle
               onClick={() => {
-                tawkMessenger.toggle();
+                tawkMessenger.toggle()
               }}
               variant="contained"
             >
@@ -202,6 +203,5 @@ const AppNavBar = (props) => {
         </Drawer>
       </nav>
     </Box>
-  );
-};
-
+  )
+}
