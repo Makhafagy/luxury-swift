@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useState, useEffect, useRef } from "react"
 import AppBar from "@mui/material/AppBar"
 import Toolbar from "@mui/material/Toolbar"
 import Typography from "@mui/material/Typography"
@@ -42,8 +42,11 @@ const ListItemButtonStyle = styled(ListItemButton)`
 const AppBarStyle = styled(AppBar)`
   height: 100px;
   background: #ffffff;
-  position: static;
+  transition: all 0.3s; /* Add transition for smooth effect */
+  position: relative; /* Ensure z-index works correctly */
+  z-index: 1000; /* Ensure app bar stays on top */
 `
+
 const LinksStyle = styled.a`
   color: #000000;
   text-decoration: none;
@@ -67,19 +70,34 @@ const BookButtonStyle = styled(Button)`
 const drawerWidth = 240
 
 const AppNavBar = props => {
+  const [Sticky, setSticky] = useState(false)
   const { tawkMessenger } = React.useContext(TawkContext)
   const { window } = props
   const [mobileOpen, setMobileOpen] = React.useState(false)
-
   const handleDrawerToggle = () => {
     setMobileOpen(prevState => !prevState)
   }
 
+  const handleScroll = () => {
+    console.log("Scrolling...")
+    const offset = window.scrollY
+    if (offset > 90) {
+      setSticky(true)
+    } else {
+      setSticky(false)
+    }
+  }
+
+  window?.addEventListener("scroll", handleScroll)
+
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-          <img src={BusinessName} width={180} style={{marginLeft:"auto", marginRight:"auto"}} />
-        
+        <img
+          src={BusinessName}
+          width={180}
+          style={{ marginLeft: "auto", marginRight: "auto" }}
+        />
       </Typography>
       <Divider />
       <List>
@@ -120,7 +138,7 @@ const AppNavBar = props => {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBarStyle>
+      <AppBarStyle className={Sticky ? "nav-sticky" : ""}>
         <Toolbar sx={{ marginTop: "auto", marginBottom: "auto" }}>
           <IconButton
             aria-label="open drawer"

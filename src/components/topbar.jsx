@@ -26,7 +26,7 @@ class TopBar extends Component {
       <nav className="container mx-auto">
         <div className="grid grid-cols-12 gap-4 items-center">
           <div className="col-span-4 font-sans text-2xl">
-            <img src={MainLogo} width={100}/>
+            <img src={MainLogo} width={80}/>
           </div>
           <div className="col-span-8 flex justify-around">
             <div className="text-white flex items-center">

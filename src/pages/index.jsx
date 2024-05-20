@@ -1,24 +1,29 @@
-import * as React from "react";
-import Navbar from "../components/navbar";
+import * as React from "react"
+import Navbar from "../components/navbar"
+import HeroCarousel from "../components/hero"
 const IndexPage = () => {
   return (
     <>
       <head>
-        <meta charset="UTF-8"/>
-        <meta name="description" content="Auto Detailing business"/>
-        <meta name="keywords" content="HTML, CSS, JavaScript, React, Gatsby"/>
-        <meta name="author" content="Hussain Alnakhli"/>
-      
+        <meta charSet="UTF-8" />
+        <meta name="description" content="Auto Detailing business" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, React, Gatsby" />
+        <meta name="author" content="Hussain Alnakhli" />
       </head>
 
       <body>
-        <Navbar/>
+        <section>
+          <Navbar />
+        </section>
+        <section>
+          <HeroCarousel/>
+          
+        </section>
       </body>
-      
     </>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export default IndexPage
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>Home Page</title>
