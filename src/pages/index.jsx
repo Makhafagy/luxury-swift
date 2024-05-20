@@ -1,6 +1,8 @@
 import * as React from "react"
 import Navbar from "../components/navbar"
 import HeroCarousel from "../components/hero"
+import { FeaturesAsymmetrical } from '../components/features'
+
 const IndexPage = () => {
   return (
     <>
@@ -17,7 +19,9 @@ const IndexPage = () => {
         </section>
         <section>
           <HeroCarousel/>
-          
+        </section>
+        <section>
+          <FeaturesAsymmetrical/>
         </section>
       </body>
     </>

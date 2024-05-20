@@ -20,8 +20,11 @@
     "@emotion/styled": "^11.11.5",
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@mantine/core": "^7.9.2",
+    "@mantine/hooks": "^7.9.2",
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.15.18",
+    "@tabler/icons-react": "^3.4.0",
     "@tawk.to/tawk-messenger-react": "^2.0.2",
     "autoprefixer": "^10.4.19",
     "bootstrap-icons": "^1.11.2",
@@ -52,6 +55,7 @@
     "webpack-dev-server": "^5.0.4"
   },
   "devDependencies": {
+    "postcss-preset-mantine": "^1.15.0",
     "prettier": "^2.6.2"
   }
 }
