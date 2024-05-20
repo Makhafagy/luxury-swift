@@ -25,6 +25,8 @@
     "@tawk.to/tawk-messenger-react": "^2.0.2",
     "autoprefixer": "^10.4.19",
     "bootstrap-icons": "^1.11.2",
+    "flowbite": "^2.3.0",
+    "flowbite-react": "^0.9.0",
     "gatsby": "^5.13.3",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",

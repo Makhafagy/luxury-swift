@@ -1,6 +1,6 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
- */const webpack = require('webpack');
+ */ 
 module.exports = {
   siteMetadata: {
     title: `dailyDetailsOttawa`,
@@ -19,10 +19,6 @@ module.exports = {
       },
       __key: "images",
     },
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      'window.jQuery': "jquery",
-      jQuery: "jquery"
-  })
+
   ],
 }

@@ -1,22 +1,43 @@
-import React from "react";
-import Carousel1 from '../images/carousel-1.jpg';
-import Carousel2 from '../images/carousel-2.jpg';
-import Carousel3 from '../images/carousel-3.jpg';
-import OwlCarousel from 'react-owl-carousel';
+import React from "react"
+import Carousel1 from "../images/carousel-1.jpg"
+import Carousel2 from "../images/carousel-2.jpg"
+import Carousel3 from "../images/carousel-3.jpg"
+import OwlCarousel from "react-owl-carousel"
+import { Button } from "@mui/material"
+import styled from "@emotion/styled"
 
-
+const BookButtonStyle = styled(Button)`
+  color: #000000;
+  margin-left: 16px;
+  background: #cecece;
+  white-space: nowrap;
+  &:hover {
+    background: #bbbbbb;
+  }
+`
 const HeroCarousel = () => {
   return (
     <>
       <div className="carousel">
         <div className="container-fluid">
           <OwlCarousel
-            className="owl-theme"
+            animateIn="fadeIn"
+            animateOut="fadeOut"
+            className="owl-carousel"
             loop
             nav
-            margin={10}
+            smartSpeed={300}
             autoplay
             items={1}
+            dots={false}
+            navContainerClass="owl-nav"
+            navClass={["owl-prev", "owl-next"]}
+            navText={[
+              '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+              '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+              "prev",
+              "next",
+            ]}
           >
             <div className="carousel-item">
               <div className="carousel-img">
@@ -29,9 +50,7 @@ const HeroCarousel = () => {
                   Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris.
                   Vivamus egestas eleifend dui ac
                 </p>
-                <a className="btn btn-custom" href="">
-                  Explore More
-                </a>
+                <BookButtonStyle variant="contained" href="">Explore More</BookButtonStyle>
               </div>
             </div>
             <div className="carousel-item">
@@ -45,9 +64,7 @@ const HeroCarousel = () => {
                   Morbi sagittis turpis id suscipit feugiat. Suspendisse eu
                   augue urna. Morbi sagittis orci sodales
                 </p>
-                <a className="btn btn-custom" href="">
-                  Explore More
-                </a>
+                <BookButtonStyle variant="contained" href="">Explore More</BookButtonStyle>
               </div>
             </div>
             <div className="carousel-item">
@@ -61,16 +78,16 @@ const HeroCarousel = () => {
                   Sed ultrices, est eget feugiat accumsan, dui nibh egestas
                   tortor, ut rhoncus nibh ligula euismod quam
                 </p>
-                <a className="btn btn-custom" href="">
+                <BookButtonStyle variant="contained" href="">
                   Explore More
-                </a>
+                </BookButtonStyle>
               </div>
             </div>
           </OwlCarousel>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default HeroCarousel;
+export default HeroCarousel
