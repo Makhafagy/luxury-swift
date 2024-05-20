@@ -14,6 +14,10 @@ const BookButtonStyle = styled(Button)`
   &:hover {
     background: #bbbbbb;
   }
+  @media (max-width:500px) {
+    font-size: 9pt !important;
+    padding: 4pt 8pt 4pt 8pt;
+  }
 `
 const HeroCarousel = () => {
   return (
