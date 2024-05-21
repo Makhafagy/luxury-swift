@@ -178,7 +178,6 @@
   .carousel .carousel-text h1 {
     font-size: 40px;
   }
-
 }
 
 @media (max-width: 575.98px) {
@@ -228,10 +227,9 @@
   }
 }
 @media (max-width: 500px) {
-    .carousel .carousel-img img{
-        min-height: 45vh !important;
-        
-      }
+  .carousel .carousel-img img {
+    min-height: 45vh !important;
+  }
   .carousel .owl-nav .owl-prev {
     margin-left: 5px;
     font-size: 17px !important;
@@ -272,4 +270,10 @@
   }
 }
 
-
+@media (min-width:1300px) {
+  .carousel{
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

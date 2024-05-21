@@ -8,13 +8,13 @@ import styled from "@emotion/styled"
 
 const BookButtonStyle = styled(Button)`
   color: #000000;
-  margin-left: 16px;
+  
   background: #cecece;
   white-space: nowrap;
   &:hover {
     background: #bbbbbb;
   }
-  @media (max-width:500px) {
+  @media (max-width:550px) {
     font-size: 9pt !important;
     padding: 4pt 8pt 4pt 8pt;
   }
@@ -45,7 +45,7 @@ const HeroCarousel = () => {
           >
             <div className="carousel-item">
               <div className="carousel-img">
-                <img src={Carousel1} alt="Image" />
+                <img src={Carousel1} alt="carousel_car" />
               </div>
               <div className="carousel-text">
                 <h3>Washing & Detailing</h3>
@@ -59,7 +59,7 @@ const HeroCarousel = () => {
             </div>
             <div className="carousel-item">
               <div className="carousel-img">
-                <img src={Carousel2} alt="Image" />
+                <img src={Carousel2} alt="carousel_car" />
               </div>
               <div className="carousel-text">
                 <h3>Washing & Detailing</h3>
@@ -73,7 +73,7 @@ const HeroCarousel = () => {
             </div>
             <div className="carousel-item">
               <div className="carousel-img">
-                <img src={Carousel3} alt="Image" />
+                <img src={Carousel3} alt="carousel_car" />
               </div>
               <div className="carousel-text">
                 <h3>Washing & Detailing</h3>
