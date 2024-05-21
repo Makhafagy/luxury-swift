@@ -1,7 +1,24 @@
-import React from 'react';
-import { Text, SimpleGrid, Container, rem, MantineProvider } from '@mantine/core'; // Import MantineProvider
-import { IconTruck, IconCalendarPlus, IconCoin } from '@tabler/icons-react';
-import * as classes from '../styles/FeaturesAsymmetrical.module.css';
+import React from "react"
+import {
+  Text,
+  SimpleGrid,
+  Container,
+  rem,
+  MantineProvider,
+} from "@mantine/core" // Import MantineProvider
+import { IconTruck, IconCalendarPlus, IconCoin } from "@tabler/icons-react"
+import * as classes from "../styles/FeaturesAsymmetrical.module.css"
+import styled from "@emotion/styled"
+const SectionTitles = styled.div`
+  font-size: 12pt;
+  color: #646363;
+  font-family: system-ui;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+`;
 
 function Feature({ icon: Icon, title, description, className, ...others }) {
   return (
@@ -10,7 +27,13 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
 
       <div className={classes.content}>
         {/* Ensure that Icon is defined before using it */}
-        {Icon && <Icon style={{ width: rem(38), height: rem(38) }} className={classes.icon} stroke={1.5} />}
+        {Icon && (
+          <Icon
+            style={{ width: rem(38), height: rem(38) }}
+            className={classes.icon}
+            stroke={1.5}
+          />
+        )}
         <Text fw={700} fz="lg" mb="xs" mt={5} className={classes.title}>
           {title}
         </Text>
@@ -19,41 +42,46 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
         </Text>
       </div>
     </div>
-  );
+  )
 }
 
 const mockdata = [
   {
     icon: IconTruck,
-    title: 'Mobile & Drop Off Services',
+    title: "Mobile & Drop Off Services",
     description:
-      'As electricity builds up inside its body, it becomes more aggressive. One theory is that the electricity.',
+      "As electricity builds up inside its body, it becomes more aggressive. One theory is that the electricity.",
   },
   {
     icon: IconCoin,
-    title: 'Very Affordable Pricing',
+    title: "Very Affordable Pricing",
     description:
-      'Slakoth’s heart beats just once a minute. Whatever happens, it is content to loaf around motionless.',
+      "Slakoth’s heart beats just once a minute. Whatever happens, it is content to loaf around motionless.",
   },
   {
     icon: IconCalendarPlus,
-    title: 'Book Online Now',
+    title: "Book Online Now",
     description:
-      'Thought to have gone extinct, Relicanth was given a name that is a variation of the name of the person who discovered.',
+      "Thought to have gone extinct, Relicanth was given a name that is a variation of the name of the person who discovered.",
   },
-];
+]
 
 export function FeaturesAsymmetrical() {
-  const items = mockdata.map((item) => <Feature {...item} key={item.title} />);
+  const items = mockdata.map(item => <Feature {...item} key={item.title} />)
 
   return (
+    <>
+      <SectionTitles className="text-center text-uppercase">
+        Welcome
+      </SectionTitles>
+      <MantineProvider>
+        <Container mt={30} mb={30} size="lg">
+          <SimpleGrid cols={{ base: 1, sm: 3 }} spacing={50}>
+            {items}
+          </SimpleGrid>
+        </Container>
+      </MantineProvider>
+    </>
     // Wrap your entire application with MantineProvider
-    <MantineProvider>
-      <Container mt={30} mb={30} size="lg">
-        <SimpleGrid cols={{ base: 1, sm: 3 }} spacing={50}>
-          {items}
-        </SimpleGrid>
-      </Container>
-    </MantineProvider>
-  );
+  )
 }

@@ -2,23 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
-    scroll-behavior: smooth;
-  }
-  
+  scroll-behavior: smooth;
+}
+
 /* width */
 ::-webkit-scrollbar {
-    width: 14px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 2px rgb(104, 103, 103);
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(56, 56, 56);
-    border-radius: 0px;
-  }
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgb(104, 103, 103);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(56, 56, 56);
+  border-radius: 0px;
+}
+
+/* About Us */
+.carpic {
+  position: relative;
+  background: url("../images/Aboutus_image3.png");
+  min-height: 410px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 80vh;
+}
+@media (min-width:1300px) {
+  .aboutus-padding{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+}
+.aboutus-padding{
+  padding-left: 60px;
+  padding-right: 60px;
+}

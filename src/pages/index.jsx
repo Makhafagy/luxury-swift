@@ -2,6 +2,7 @@ import * as React from "react"
 import Navbar from "../components/navbar"
 import HeroCarousel from "../components/hero"
 import { FeaturesAsymmetrical } from '../components/features'
+import AboutUs from "../components/aboutUs"
 
 const IndexPage = () => {
   return (
@@ -22,6 +23,9 @@ const IndexPage = () => {
         </section>
         <section>
           <FeaturesAsymmetrical/>
+        </section>
+        <section style={{minHeight:"1200px"}}>
+          <AboutUs/>
         </section>
       </body>
     </>
