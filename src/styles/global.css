@@ -13,7 +13,7 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px rgb(104, 103, 103);
+  border-left: 1px solid rgb(218, 218, 218);
 }
 
 /* Handle */
@@ -39,6 +39,6 @@ html {
 }
 }
 .aboutus-padding{
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 20%;
+  padding-right: 20%;
 }

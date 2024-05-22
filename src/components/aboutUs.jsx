@@ -9,7 +9,6 @@ const LeftHalf = styled.div`
 
 const Title = styled.div`
   min-height: 260px;
-  align-items: center;
   font-family: sans-serif;
 `
 const SecondTitle = styled.span`
@@ -18,10 +17,11 @@ const SecondTitle = styled.span`
   font-weight: bold;
 `
 const LeftText = styled.div`
-  background: #202020;
+  background: rgba(34, 139, 230, 0.15);
   min-height: 150px;
   padding: 20px;
-  color: lightgray;
+  color: #000000;
+  font-size: 13pt;
   font-family: sans-serif;
 `
 
@@ -38,7 +38,7 @@ const SectionDescription = styled.div`
   font-size: 12pt;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #6e6e6e;
+  color: #8a8a8a;
   margin-bottom: 70px;
   margin-left: 23px;
   margin-right: 23px;
@@ -56,7 +56,7 @@ const AboutUs = () => {
         <div className="flex flex-wrap -mx-4">
           <LeftHalf className="w-full md:w-5/12">
             <Title className="flex">
-              <div className="text-base/7">
+              <div className="text-base/7 p-4">
                 ABOUT US <br /> <SecondTitle>#1 in Ottawa</SecondTitle>
               </div>
             </Title>

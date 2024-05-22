@@ -1,9 +1,10 @@
 import * as React from "react"
 import Navbar from "../components/navbar"
 import HeroCarousel from "../components/hero"
-import { FeaturesAsymmetrical } from '../components/features'
+import { FeaturesAsymmetrical } from "../components/features"
 import AboutUs from "../components/aboutUs"
-
+import { FaqSimple } from "../components/faq"
+import ContactCard from '../components/contactCard'
 const IndexPage = () => {
   return (
     <>
@@ -18,14 +19,20 @@ const IndexPage = () => {
         <section>
           <Navbar />
         </section>
-        <section>
-          <HeroCarousel/>
+        <section style={{marginTop:"140.64px"}}>
+          <HeroCarousel />
         </section>
         <section>
-          <FeaturesAsymmetrical/>
+          <FeaturesAsymmetrical />
         </section>
-        <section style={{minHeight:"1200px"}}>
-          <AboutUs/>
+        <section style={{ minHeight: "900px" }}>
+          <AboutUs />
+        </section>
+        <section>
+          <FaqSimple />
+        </section>
+        <section style={{ minHeight: "900px" }}>
+          <ContactCard/>
         </section>
       </body>
     </>

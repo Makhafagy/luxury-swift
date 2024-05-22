@@ -14,7 +14,8 @@ import ListItemText from "@mui/material/ListItemText"
 import IconButton from "@mui/material/IconButton"
 import MenuIcon from "@mui/icons-material/Menu"
 import { TawkContext } from "../providers"
-import BusinessName from "../images/business_name.png"
+import BusinessName from "../images/business_name2.png"
+import BusinessName1 from "../images/business_name.png"
 import TopBar from "./topbar"
 
 const Navbar = () => {
@@ -40,15 +41,15 @@ const ListItemButtonStyle = styled(ListItemButton)`
 `
 
 const AppBarStyle = styled(AppBar)`
-  height: 100px;
+  height: 80px;
   background: #ffffff;
-  transition: all 0.3s; /* Add transition for smooth effect */
-  position: relative; /* Ensure z-index works correctly */
-  z-index: 1000; /* Ensure app bar stays on top */
+  position: fixed;
+  margin-top: 60.64px;
+  /* border-top: 1px solid #242424; */
 `
 
 const LinksStyle = styled.a`
-  color: #000000;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
   margin-left: 16px;
@@ -94,7 +95,7 @@ const AppNavBar = props => {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
         <img
-          src={BusinessName}
+          src={BusinessName1}
           width={180}
           style={{ marginLeft: "auto", marginRight: "auto" }}
         />
@@ -144,7 +145,7 @@ const AppNavBar = props => {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, color: "dark", display: { md: "none" } }}
+            sx={{ mr: 2, color: "white", display: { md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
@@ -157,7 +158,7 @@ const AppNavBar = props => {
                 display: "flex",
               }}
             >
-              <img src={BusinessName} width={180} />
+              <img src={BusinessName1} width={190} />
               {/* <span style={{ fontFamily: "sans-serif" }}>Daily Details </span>
               &nbsp;Ottawa */}
             </div>

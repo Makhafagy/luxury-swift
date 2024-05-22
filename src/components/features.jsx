@@ -10,8 +10,8 @@ import { IconTruck, IconCalendarPlus, IconCoin } from "@tabler/icons-react"
 import * as classes from "../styles/FeaturesAsymmetrical.module.css"
 import styled from "@emotion/styled"
 const SectionTitles = styled.div`
-  font-size: 12pt;
-  color: #646363;
+  font-size: 13pt;
+  color: #8a8a8a;
   font-family: system-ui;
   margin-bottom: 50px;
 
@@ -37,7 +37,7 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
         <Text fw={700} fz="lg" mb="xs" mt={5} className={classes.title}>
           {title}
         </Text>
-        <Text c="dimmed" fz="sm">
+        <Text c="dimmed" fz="md">
           {description}
         </Text>
       </div>
@@ -75,7 +75,7 @@ export function FeaturesAsymmetrical() {
         Welcome
       </SectionTitles>
       <MantineProvider>
-        <Container mt={30} mb={30} size="lg">
+        <Container mt={30} mb={30} size="md">
           <SimpleGrid cols={{ base: 1, sm: 3 }} spacing={50}>
             {items}
           </SimpleGrid>
