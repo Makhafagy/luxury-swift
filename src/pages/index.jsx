@@ -5,6 +5,13 @@ import { FeaturesAsymmetrical } from "../components/features"
 import AboutUs from "../components/aboutUs"
 import { FaqSimple } from "../components/faq"
 import ContactCard from '../components/contactCard'
+import StatsGroup  from "../components/stats"
+import styled from '@emotion/styled'
+
+const SectionStat = styled.section`
+  background: black;
+
+`
 const IndexPage = () => {
   return (
     <>
@@ -25,8 +32,11 @@ const IndexPage = () => {
         <section>
           <FeaturesAsymmetrical />
         </section>
-        <section style={{ minHeight: "900px" }}>
+        <section style={{ minHeight: "700px" }}>
           <AboutUs />
+        </section>
+        <section style={{ minHeight: "500px" }}>
+          <StatsGroup/>
         </section>
         <section>
           <FaqSimple />
@@ -34,6 +44,7 @@ const IndexPage = () => {
         <section style={{ minHeight: "900px" }}>
           <ContactCard/>
         </section>
+
       </body>
     </>
   )
