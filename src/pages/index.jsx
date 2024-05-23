@@ -4,14 +4,11 @@ import HeroCarousel from "../components/hero"
 import { FeaturesAsymmetrical } from "../components/features"
 import AboutUs from "../components/aboutUs"
 import { FaqSimple } from "../components/faq"
-import ContactCard from '../components/contactCard'
-import StatsGroup  from "../components/stats"
-import styled from '@emotion/styled'
+import ContactCard from "../components/contactCard"
+import StatsGroup from "../components/stats"
+import { FooterLinks } from "../components/footer"
+import Testimonial from '../components/testimonial'
 
-const SectionStat = styled.section`
-  background: black;
-
-`
 const IndexPage = () => {
   return (
     <>
@@ -26,7 +23,7 @@ const IndexPage = () => {
         <section>
           <Navbar />
         </section>
-        <section style={{marginTop:"140.64px"}}>
+        <section style={{ marginTop: "140.64px" }}>
           <HeroCarousel />
         </section>
         <section>
@@ -36,15 +33,20 @@ const IndexPage = () => {
           <AboutUs />
         </section>
         <section style={{ minHeight: "500px" }}>
-          <StatsGroup/>
+          <StatsGroup />
         </section>
         <section>
           <FaqSimple />
         </section>
         <section style={{ minHeight: "900px" }}>
-          <ContactCard/>
+          <ContactCard />
         </section>
-
+        <section style={{ minHeight: "900px" }}>
+          <Testimonial />
+        </section>
+        <section>
+          <FooterLinks/>
+        </section>
       </body>
     </>
   )

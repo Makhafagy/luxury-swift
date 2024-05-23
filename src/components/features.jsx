@@ -18,7 +18,7 @@ const SectionTitles = styled.div`
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
   }
-`;
+`
 
 function Feature({ icon: Icon, title, description, className, ...others }) {
   return (
@@ -48,7 +48,7 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
 const mockdata = [
   {
     icon: IconTruck,
-    title: "Mobile & Drop Off Services",
+    title: "Mobile & On Site Services",
     description:
       "As electricity builds up inside its body, it becomes more aggressive. One theory is that the electricity.",
   },
@@ -82,6 +82,5 @@ export function FeaturesAsymmetrical() {
         </Container>
       </MantineProvider>
     </>
-    // Wrap your entire application with MantineProvider
   )
 }
