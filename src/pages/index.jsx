@@ -8,7 +8,7 @@ import ContactCard from "../components/contactCard"
 import StatsGroup from "../components/stats"
 import { FooterLinks } from "../components/footer"
 import Testimonial from '../components/testimonial'
-
+import Packages from '../components/pricing'
 const IndexPage = () => {
   return (
     <>
@@ -40,6 +40,9 @@ const IndexPage = () => {
         </section>
         <section style={{ minHeight: "900px" }}>
           <ContactCard />
+        </section>
+        <section>
+          <Packages/>
         </section>
         <section style={{ minHeight: "900px" }}>
           <Testimonial />

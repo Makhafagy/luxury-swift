@@ -26,18 +26,19 @@ class TopBar extends Component {
               <img src={MainLogo} width={70} height={70}/>
             </div>
             <div className="col-span-8 flex justify-around">
-              <div className="text-white flex items-center">
+              <div className="text-white font-light flex items-center">
                 <Icon className="bi bi-geo-alt-fill mr-2" />
                 <span className="hidden md:flex font-sans">Ottawa, Canada</span>
+                
               </div>
-              <div className="text-white flex items-center">
+              <div className="text-white font-light flex items-center">
                 <Icon
                   href="tel:+16134104971"
                   className="bi bi-telephone-fill mr-2"
                 />
                 <span className="hidden md:flex font-sans">+1 613-410-4971</span>
               </div>
-              <div className="text-white flex items-center">
+              <div className="text-white font-light flex items-center">
                 <Icon
                   href="mailto:mah.hussaina@gmail.com"
                   className="bi bi-envelope-fill mr-2"

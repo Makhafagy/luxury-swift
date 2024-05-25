@@ -29,10 +29,10 @@ const data = [
   {
     title: "Services",
     links: [
-      { label: "Contribute", link: "#" },
-      { label: "Media assets", link: "#" },
-      { label: "Changelog", link: "#" },
-      { label: "Releases", link: "#" },
+      { label: "Packages", link: "#" },
+      { label: "Add-ons", link: "#" },
+      { label: "Mobile Detailing", link: "#" },
+      { label: "Ceramic Coating", link: "#" },
     ],
   },
   {

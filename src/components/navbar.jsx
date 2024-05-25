@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState } from "react"
 import AppBar from "@mui/material/AppBar"
 import Toolbar from "@mui/material/Toolbar"
 import Typography from "@mui/material/Typography"
@@ -14,7 +14,7 @@ import ListItemText from "@mui/material/ListItemText"
 import IconButton from "@mui/material/IconButton"
 import MenuIcon from "@mui/icons-material/Menu"
 import { TawkContext } from "../providers"
-import BusinessName from "../images/business_name2.png"
+// import BusinessName from "../images/business_name2.png"
 import BusinessName1 from "../images/business_name.png"
 import TopBar from "./topbar"
 
@@ -97,6 +97,7 @@ const AppNavBar = props => {
         <img
           src={BusinessName1}
           width={180}
+          alt="logo"
           style={{ marginLeft: "auto", marginRight: "auto" }}
         />
       </Typography>
@@ -145,7 +146,7 @@ const AppNavBar = props => {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, color: "white", display: { md: "none" } }}
+            sx={{ mr: 2, color: "dark", display: { md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
@@ -158,7 +159,7 @@ const AppNavBar = props => {
                 display: "flex",
               }}
             >
-              <img src={BusinessName1} width={190} />
+              <img src={BusinessName1} width={190} alt="logo" />
               {/* <span style={{ fontFamily: "sans-serif" }}>Daily Details </span>
               &nbsp;Ottawa */}
             </div>
