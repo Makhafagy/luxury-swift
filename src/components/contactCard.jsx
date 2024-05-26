@@ -1,9 +1,9 @@
 import React from "react"
 import { IconMail, IconPhone, IconMapPin, IconClock } from "@tabler/icons-react"
-
 const ContactCard = () => {
   return (
-    <div className="max-w-80 mx-auto  bg-opacity-20 shadow-xl rounded-lg overflow-hidden bg-[#228be6]">
+    <div className="">
+    <div className="max-w-80 mx-auto  bg-opacity-50 shadow-xl rounded-lg overflow-hidden bg-blue-500 ">
       <div className="px-10 py-8 pb-24">
         <h2 className="text-xl font-semibold mb-16 ">Contact Information</h2>
         <div className="flex items-center mb-4">
@@ -23,6 +23,7 @@ const ContactCard = () => {
           <span className="text-black font-medium">Mon-Fri: 9:00 AM - 5:00 PM</span>
         </div>
       </div>
+    </div>
     </div>
   )
 }

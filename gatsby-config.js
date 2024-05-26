@@ -1,6 +1,8 @@
+
+
 /**
  * @type {import('gatsby').GatsbyConfig}
- */ 
+ */
 module.exports = {
   siteMetadata: {
     title: `dailyDetailsOttawa`,
@@ -16,10 +18,11 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/images",
       },
       __key: "images",
     },
 
   ],
+  
 }

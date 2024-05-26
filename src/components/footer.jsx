@@ -73,7 +73,7 @@ export function FooterLinks() {
       <MantineProvider>
         <Container className={classes.inner}>
           <div className={classes.logo}>
-            <img className="size-14" src={BusinessLogo}/>
+            <img className="size-14" src={BusinessLogo} alt="logo"/>
             <Text size="md" c="dimmed" className={classes.description}>
               Daily Details Ottawa
             </Text>

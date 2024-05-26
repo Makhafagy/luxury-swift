@@ -9,7 +9,7 @@ import CountUp from "react-countup"
 const StatsGroup = () => {
   return (
     <>
-      <div className="bg-[#bdbdbd] bg-opacity-20 py-10 px-16 bg-[radial-gradient(#00000011_1px,transparent_1px)] [background-size:16px_16px]">
+      <div className="bg-[#bdbdbd] bg-opacity-20 py-10 px-16 bg-[radial-gradient(#00000029_1px,transparent_1px)] [background-size:16px_16px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2">
           <div className="flex p-4">
             <IconTrendingUp className=" text-blue-500 w-11 h-11 mr-6" />

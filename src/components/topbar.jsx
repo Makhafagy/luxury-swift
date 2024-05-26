@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import ReactCompareImage from "react-compare-image"
 import styled from "@emotion/styled"
 
 const Icon = styled.a`
@@ -23,7 +22,7 @@ class TopBar extends Component {
         <nav className="container mx-auto">
           <div className="grid grid-cols-12 gap-4 items-center">
             <div className="col-span-4 font-sans text-2xl p-1 ps-7">
-              <img src={MainLogo} width={70} height={70}/>
+              <img src={MainLogo} width={70} height={70} alt="logo"/>
             </div>
             <div className="col-span-8 flex justify-around">
               <div className="text-white font-light flex items-center">

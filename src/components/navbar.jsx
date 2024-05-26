@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import AppBar from "@mui/material/AppBar"
 import Toolbar from "@mui/material/Toolbar"
 import Typography from "@mui/material/Typography"
@@ -71,25 +71,17 @@ const BookButtonStyle = styled(Button)`
 const drawerWidth = 240
 
 const AppNavBar = props => {
-  const [Sticky, setSticky] = useState(false)
   const { tawkMessenger } = React.useContext(TawkContext)
   const { window } = props
   const [mobileOpen, setMobileOpen] = React.useState(false)
+
   const handleDrawerToggle = () => {
     setMobileOpen(prevState => !prevState)
   }
 
-  const handleScroll = () => {
-    console.log("Scrolling...")
-    const offset = window.scrollY
-    if (offset > 90) {
-      setSticky(true)
-    } else {
-      setSticky(false)
-    }
-  }
+  
 
-  window?.addEventListener("scroll", handleScroll)
+  
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -140,7 +132,7 @@ const AppNavBar = props => {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBarStyle className={Sticky ? "nav-sticky" : ""}>
+      <AppBarStyle>
         <Toolbar sx={{ marginTop: "auto", marginBottom: "auto" }}>
           <IconButton
             aria-label="open drawer"

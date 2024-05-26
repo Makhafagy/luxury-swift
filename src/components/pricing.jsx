@@ -1,26 +1,37 @@
 import React from "react";
 import { Button } from "@mui/material";
 import { TawkContext } from "../providers";
+import styled from "@emotion/styled"
 
+// className="bg-[#e9e8e8] text-black w-3/4 hover:bg-[#bbbbbb]"
+
+const BookButtonStyle = styled(Button)`
+    background: #e9e8e8;
+    color: black;
+    width: 75%;
+    &:hover {
+    background: #bbbbbb;
+  }
+`
 
 const Packages = () => {
   const { tawkMessenger } = React.useContext(TawkContext);
   return (
     <>
-      <div className="text-center text-2xl uppercase mb-12 md:mb-5 text-gray-600">
-        Packages
+      <div className="text-center text-lg capitalize mb-12 md:mb-5 text-gray-600">
+        Pricing
       </div>
       <div className="text-5xl text-center uppercase mb-8 md:text-3xl">
         our packages
       </div>
       <div className="text-lg text-center text-gray-500 mb-12 mx-6 md:mx-3">
-        Elevate your car's look and protection with our ceramic coating packages, ensuring long-lasting shine and defense against the elements.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
       </div>
 
       <div className="container-full px-5 md:px-3">
-        <div className="flex flex-wrap -mx-3">
-          <div className="w-4/5 sm:w-2/3 lg:w-1/3 mx-auto px-3 mb-6">
-            <div className="relative p-10 rounded-lg border border-yellow-600 shadow-md bg-white">
+        <div className="flex flex-wrap">
+          <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-3 mb-6">
+            <div className="relative p-10 rounded-lg border border-slate-700 shadow-md bg-white">
               <div className="text-xl font-medium pb-2 flex items-center">
                 <i className="mr-2 bi bi-circle-half" />
                 Essential Daily Detail
@@ -33,11 +44,8 @@ const Packages = () => {
               </div>
               <ItemArray text={["Full interior vacuum."]} />
               <ItemArray text={["Full soft brush wipe down"]} />
-              <ItemArray text={["Compartment Restoration"]} />
-              <ItemArray text={["Door Panel Restoration"]} />
+              <ItemArray text={["Compartment, Door Panel, Dashboard & Floor Mats Restoration"]} />
               <ItemArray text={["Invisible interior glass"]} />
-              <ItemArray text={["Dashboard Restoration"]} />
-              <ItemArray text={["Floor Mats Restoration"]} />
               <ItemArrayX text={["Advanced Steam Cleaning"]} />
               <ItemArrayX text={["Full Seat and Carpet Extraction"]} />
               <ItemArrayX text={["UV Protection"]} />
@@ -55,7 +63,7 @@ const Packages = () => {
               <ItemArrayX text={["Clay Bar Restoration"]} />
               <ItemArrayX text={["Complementary Cloth and ait Freshener"]} />
               <div className="text-center py-4">
-                <Button
+                <BookButtonStyle
                   onClick={() => {
                     tawkMessenger.toggle();
                   }}
@@ -63,15 +71,15 @@ const Packages = () => {
                   className="bg-[#e9e8e8] text-black w-3/4 hover:bg-[#bbbbbb]"
                 >
                   Book Now
-                </Button>
+                </BookButtonStyle>
               </div>
               <div className="text-center text-base text-gray-500">
                 $110 for 7 seater
               </div>
             </div>
           </div>
-          <div className="w-4/5 sm:w-2/3 lg:w-1/3 mx-auto px-3 mb-6">
-          <div className="relative p-10 rounded-lg shadow-md bg-slate-700 text-white">
+          <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-3 mb-6">
+          <div className="relative p-10 rounded-lg shadow-md bg-zinc-900 text-white">
               <div className="absolute top-0 right-0 mt-0 mr-7 px-4 py-2 bg-[#e9e8e8] text-black font-semibold rounded-b-lg">
                 Best Deal
               </div>
@@ -87,11 +95,8 @@ const Packages = () => {
               </div>
               <ItemArrayB text={["Full interior vacuum."]} />
               <ItemArrayB text={["Full soft brush wipe down"]} />
-              <ItemArrayB text={["Compartment Restoration"]} />
-              <ItemArrayB text={["Door Panel Restoration"]} />
+              <ItemArrayB text={["Compartment, Door Panel, Dashboard & Floor Mats Restoration"]} />       
               <ItemArrayB text={["Invisible interior glass"]} />
-              <ItemArrayB text={["Dashboard Restoration"]} />
-              <ItemArrayB text={["Floor Mats Restoration"]} />
               <ItemArrayB text={["Advanced Steam Cleaning"]} />
               <ItemArrayB text={["Full Seat and Carpet Extraction"]} />
               <ItemArrayB text={["UV Protection"]} />
@@ -109,7 +114,7 @@ const Packages = () => {
               <ItemArrayBX text={["Clay Bar Restoration"]} />
               <ItemArrayBX text={["Complementary Cloth and ait Freshener"]} />
               <div className="text-center py-4">
-                <Button
+                <BookButtonStyle
                   onClick={() => {
                     tawkMessenger.toggle();
                   }}
@@ -117,14 +122,14 @@ const Packages = () => {
                   className="bg-[#cccbcb] text-black w-3/4 hover:bg-[#bbbbbb]"
                 >
                   Book Now
-                </Button>
+                </BookButtonStyle>
               </div>
               <div className="text-center text-base text-gray-300">
                 $160 for 7 seater
               </div>
             </div>
           </div>
-          <div className="w-4/5 sm:w-2/3 lg:w-1/3 mx-auto px-3 mb-6">
+          <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-3 mb-6">
           <div className="relative p-10 rounded-lg border border-slate-700 shadow-md bg-white">
               <div className="text-xl font-medium pb-2 flex items-center">
                 <i className="mr-2 bi bi-circle-half" />
@@ -138,11 +143,8 @@ const Packages = () => {
               </div>
               <ItemArray text={["Full interior vacuum."]} />
               <ItemArray text={["Full soft brush wipe down"]} />
-              <ItemArray text={["Compartment Restoration"]} />
-              <ItemArray text={["Door Panel Restoration"]} />
+              <ItemArray text={["Compartment, Door Panel, Dashboard & Floor Mats Restoration"]} />       
               <ItemArray text={["Invisible interior glass"]} />
-              <ItemArray text={["Dashboard Restoration"]} />
-              <ItemArray text={["Floor Mats Restoration"]} />
               <ItemArray text={["Advanced Steam Cleaning"]} />
               <ItemArray text={["Full Seat and Carpet Extraction"]} />
               <ItemArray text={["UV Protection"]} />
@@ -160,7 +162,7 @@ const Packages = () => {
               <ItemArray text={["Clay Bar Restoration"]} />
               <ItemArray text={["Complementary Cloth and ait Freshener"]} />
               <div className="text-center py-4">
-                <Button
+                <BookButtonStyle
                   onClick={() => {
                     tawkMessenger.toggle();
                   }}
@@ -168,7 +170,7 @@ const Packages = () => {
                   className="bg-[#e9e8e8] text-black w-3/4 hover:bg-[#bbbbbb]"
                 >
                   Book Now
-                </Button>
+                </BookButtonStyle>
               </div>
               <div className="text-center text-base text-gray-500">
                 $210 for 7 seater
@@ -211,7 +213,7 @@ const Packages = () => {
               <ItemArray text={["Clay Bar Restoration"]} />
               <ItemArray text={["Complementary Cloth and ait Freshener"]} />
               <div className="text-center py-4">
-                <Button
+                <BookButtonStyle
                   onClick={() => {
                     tawkMessenger.toggle();
                   }}
@@ -219,7 +221,7 @@ const Packages = () => {
                   className="bg-yellow-600 text-black w-3/4 hover:bg-yellow-700"
                 >
                   Book Now
-                </Button>
+                </BookButtonStyle>
               </div>
               <div className="text-center text-base text-gray-500">
                 $299 for 7 seater
