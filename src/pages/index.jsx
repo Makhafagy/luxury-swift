@@ -7,8 +7,9 @@ import { FaqSimple } from "../components/faq"
 import ContactCard from "../components/contactCard"
 import StatsGroup from "../components/stats"
 import { FooterLinks } from "../components/footer"
-import Testimonial from '../components/testimonial'
-import Packages from '../components/pricing'
+import Testimonial from "../components/testimonial"
+import Packages from "../components/pricing"
+import ServiceSection from "../components/services"
 const IndexPage = () => {
   return (
     <>
@@ -42,13 +43,16 @@ const IndexPage = () => {
           <ContactCard />
         </section>
         <section>
-          <Packages/>
+          <Packages />
         </section>
         <section style={{ minHeight: "900px" }}>
           <Testimonial />
         </section>
+        <section style={{ minHeight: "900px" }}>
+          <ServiceSection />
+        </section>
         <section>
-          <FooterLinks/>
+          <FooterLinks />
         </section>
       </body>
     </>

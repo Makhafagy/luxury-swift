@@ -1,6 +1,7 @@
 import { Container, Title, Accordion, MantineProvider } from "@mantine/core"
 import * as classes from "../styles/FaqSimple.module.css"
 import React from "react"
+
 const placeholder = [
   {
     q1: "Daily Details Ottawa offers a comprehensive range of services to keep your vehicle looking its best. This includes exterior detailing, interior cleaning, waxing, polishing, paint protection, stain removal, odor elimination, and more.",
@@ -21,7 +22,7 @@ const placeholder = [
 
 export function FaqSimple() {
   return (
-    <MantineProvider>
+    <MantineProvider defaultColorScheme="light">
       <Container size="sm" className={classes.wrapper}>
         <Title ta="center" className={classes.title}>
           Frequently Asked Questions
