@@ -9,6 +9,8 @@ import {
 import { IconTruck, IconCalendarPlus, IconCoin } from "@tabler/icons-react"
 import * as classes from "../styles/FeaturesAsymmetrical.module.css"
 import styled from "@emotion/styled"
+import { motion } from "framer-motion"
+
 const SectionTitles = styled.div`
   font-size: 13pt;
   color: #8a8a8a;
@@ -22,7 +24,13 @@ const SectionTitles = styled.div`
 
 function Feature({ icon: Icon, title, description, className, ...others }) {
   return (
-    <div className={classes.feature} {...others}>
+    <motion.div
+      initial={{ opacity: 0, y: 5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 1 }}
+      className={classes.feature}
+      {...others}
+    >
       <div className={classes.overlay} />
 
       <div className={classes.content}>
@@ -41,7 +49,7 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
           {description}
         </Text>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

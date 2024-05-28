@@ -17,7 +17,7 @@ const SecondTitle = styled.span`
   font-weight: bold;
 `
 const LeftText = styled.div`
-  background-color: rgba(189, 189, 189, 0.2);
+  background-color: #228be619;
   min-height: 150px;
   padding: 20px;
   color: #000000;

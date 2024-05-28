@@ -4,12 +4,14 @@ import HeroCarousel from "../components/hero"
 import { FeaturesAsymmetrical } from "../components/features"
 import AboutUs from "../components/aboutUs"
 import { FaqSimple } from "../components/faq"
-import ContactCard from "../components/contactCard"
+// import ContactCard from "../components/contactCard"
 import StatsGroup from "../components/stats"
 import { FooterLinks } from "../components/footer"
 import Testimonial from "../components/testimonial"
 import Packages from "../components/pricing"
 import ServiceSection from "../components/services"
+import {GetInTouch} from "../components/contactForm"
+
 const IndexPage = () => {
   return (
     <>
@@ -24,32 +26,35 @@ const IndexPage = () => {
         <section>
           <Navbar />
         </section>
-        <section style={{ marginTop: "140.64px" }}>
+        <section style={{ marginTop: "63.99px" }}>
           <HeroCarousel />
         </section>
         <section>
           <FeaturesAsymmetrical />
         </section>
-        <section style={{ minHeight: "700px" }}>
+        <section style={{ minHeight: "900px" }}>
           <AboutUs />
         </section>
-        <section style={{ minHeight: "500px" }}>
+        <section style={{ marginTop: "250px" }}>
           <StatsGroup />
         </section>
         <section>
           <FaqSimple />
         </section>
-        <section style={{ minHeight: "900px" }}>
+        {/* <section style={{ minHeight: "900px" }}>
           <ContactCard />
-        </section>
+        </section> */}
         <section>
           <Packages />
         </section>
-        <section style={{ minHeight: "900px" }}>
+        <section style={{ marginTop: "250px"  }}>
           <Testimonial />
         </section>
-        <section style={{ minHeight: "900px" }}>
+        <section style={{ minHeight: "1200px" }}>
           <ServiceSection />
+        </section>
+        <section style={{ marginTop: "250px" }}>
+          <GetInTouch />
         </section>
         <section>
           <FooterLinks />

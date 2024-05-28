@@ -15,7 +15,7 @@ const StatsGroup = () => {
             <IconTrendingUp className=" text-blue-500 w-11 h-11 mr-6" />
             <div className="text-slate-800">
               <CountUp
-                duration={3}
+                duration={2}
                 prefix="$"
                 enableScrollSpy
                 scrollSpyOnce
@@ -29,7 +29,7 @@ const StatsGroup = () => {
             <IconMoodHeart className="w-11 h-11 mr-6  text-blue-500" />
             <div className="text-slate-800">
               <CountUp
-                duration={3}
+                duration={2}
                 prefix="%"
                 enableScrollSpy
                 scrollSpyOnce
@@ -57,7 +57,7 @@ const StatsGroup = () => {
             <IconRepeat className="w-11 h-11 mr-6 text-blue-500" />
             <div className="text-slate-800">
               <CountUp
-                duration={3}
+                duration={2}
                 prefix="%"
                 enableScrollSpy
                 scrollSpyOnce

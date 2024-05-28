@@ -1,21 +1,21 @@
-import React from "react";
-import { Button } from "@mui/material";
-import { TawkContext } from "../providers";
+import React from "react"
+import { Button } from "@mui/material"
+import { TawkContext } from "../providers"
 import styled from "@emotion/styled"
 
 // className="bg-[#e9e8e8] text-black w-3/4 hover:bg-[#bbbbbb]"
 
 const BookButtonStyle = styled(Button)`
-    background: #e9e8e8;
-    color: black;
-    width: 75%;
-    &:hover {
+  background: #e9e8e8;
+  color: black;
+  width: 75%;
+  &:hover {
     background: #bbbbbb;
   }
 `
 
 const Packages = () => {
-  const { tawkMessenger } = React.useContext(TawkContext);
+  const { tawkMessenger } = React.useContext(TawkContext)
   return (
     <>
       <div className="text-center text-lg capitalize mb-12 md:mb-5 text-gray-600">
@@ -25,26 +25,31 @@ const Packages = () => {
         our packages
       </div>
       <div className="text-lg text-center text-gray-500 mb-12 mx-6 md:mx-3">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
       </div>
 
       <div className="container-full px-5 md:px-3">
         <div className="flex flex-wrap">
           <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-3 mb-6">
             <div className="relative p-10 rounded-lg border border-slate-700 shadow-md bg-white">
-              <div className="text-xl font-medium pb-2 flex items-center">
-                <i className="mr-2 bi bi-circle-half" />
+              <div className="text-xl font-medium py-2 flex items-center">
+                <i className="mr-2 bi bi-circle-half " />
                 Essential Daily Detail
               </div>
               <div className="text-base mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
               </div>
               <div className="text-4xl mb-4">
                 $90 <span className="text-base text-gray-500">/ All Sizes</span>
               </div>
               <ItemArray text={["Full interior vacuum."]} />
               <ItemArray text={["Full soft brush wipe down"]} />
-              <ItemArray text={["Compartment, Door Panel, Dashboard & Floor Mats Restoration"]} />
+              <ItemArray
+                text={[
+                  "Compartment, Door Panel, Dashboard & Floor Mats Restoration",
+                ]}
+              />
               <ItemArray text={["Invisible interior glass"]} />
               <ItemArrayX text={["Advanced Steam Cleaning"]} />
               <ItemArrayX text={["Full Seat and Carpet Extraction"]} />
@@ -52,7 +57,7 @@ const Packages = () => {
               <ItemArrayX text={["Carpet Salt Stain Removal"]} />
               <ItemArrayX text={["Hand Wash"]} />
               <ItemArrayX text={["Pre-rinse"]} />
-              <ItemArrayX text={["Wheel Rim and Tire Cleaner"]} />
+              <ItemArrayX text={["Wheel Rim & Tire Cleaner"]} />
               <ItemArrayX text={["Full Exterior Wash and Dry"]} />
               <ItemArrayX text={["Full Salt Stain Removal"]} />
               <ItemArrayX text={["Full Black Finish on all appliances"]} />
@@ -65,7 +70,7 @@ const Packages = () => {
               <div className="text-center py-4">
                 <BookButtonStyle
                   onClick={() => {
-                    tawkMessenger.toggle();
+                    tawkMessenger.toggle()
                   }}
                   variant="contained"
                   className="bg-[#e9e8e8] text-black w-3/4 hover:bg-[#bbbbbb]"
@@ -79,23 +84,28 @@ const Packages = () => {
             </div>
           </div>
           <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-3 mb-6">
-          <div className="relative p-10 rounded-lg shadow-md bg-zinc-900 text-white">
+            <div className="relative p-10 rounded-lg shadow-md bg-zinc-900 text-white">
               <div className="absolute top-0 right-0 mt-0 mr-7 px-4 py-2 bg-[#e9e8e8] text-black font-semibold rounded-b-lg">
                 Best Deal
               </div>
-              <div className="text-xl font-medium pb-2 flex items-center">
+              <div className="text-xl font-medium py-2 flex items-center">
                 <i className="mr-2 bi bi-circle-half" />
                 Elite Daily Detail
               </div>
               <div className="text-base mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
               </div>
               <div className="text-4xl mb-4">
                 $140 <span className="text-base text-gray-400">/ Starting</span>
               </div>
               <ItemArrayB text={["Full interior vacuum."]} />
               <ItemArrayB text={["Full soft brush wipe down"]} />
-              <ItemArrayB text={["Compartment, Door Panel, Dashboard & Floor Mats Restoration"]} />       
+              <ItemArrayB
+                text={[
+                  "Compartment, Door Panel, Dashboard & Floor Mats Restoration",
+                ]}
+              />
               <ItemArrayB text={["Invisible interior glass"]} />
               <ItemArrayB text={["Advanced Steam Cleaning"]} />
               <ItemArrayB text={["Full Seat and Carpet Extraction"]} />
@@ -103,7 +113,7 @@ const Packages = () => {
               <ItemArrayB text={["Carpet Salt Stain Removal"]} />
               <ItemArrayB text={["Hand Wash"]} />
               <ItemArrayB text={["Pre-rinse"]} />
-              <ItemArrayB text={["Wheel Rim and Tire Cleaner"]} />
+              <ItemArrayB text={["Wheel Rim & Tire Cleaner"]} />
               <ItemArrayB text={["Full Exterior Wash and Dry"]} />
               <ItemArrayBX text={["Full Salt Stain Removal"]} />
               <ItemArrayBX text={["Full Black Finish on all appliances"]} />
@@ -116,7 +126,7 @@ const Packages = () => {
               <div className="text-center py-4">
                 <BookButtonStyle
                   onClick={() => {
-                    tawkMessenger.toggle();
+                    tawkMessenger.toggle()
                   }}
                   variant="contained"
                   className="bg-[#cccbcb] text-black w-3/4 hover:bg-[#bbbbbb]"
@@ -130,20 +140,25 @@ const Packages = () => {
             </div>
           </div>
           <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-3 mb-6">
-          <div className="relative p-10 rounded-lg border border-slate-700 shadow-md bg-white">
-              <div className="text-xl font-medium pb-2 flex items-center">
+            <div className="relative p-10 rounded-lg border border-slate-700 shadow-md bg-white">
+              <div className="text-xl font-medium py-2 flex items-center">
                 <i className="mr-2 bi bi-circle-half" />
                 Supreme Daily Detail
               </div>
               <div className="text-base mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
               </div>
               <div className="text-4xl mb-4">
                 $190 <span className="text-base text-gray-400">/ Starting</span>
               </div>
               <ItemArray text={["Full interior vacuum."]} />
               <ItemArray text={["Full soft brush wipe down"]} />
-              <ItemArray text={["Compartment, Door Panel, Dashboard & Floor Mats Restoration"]} />       
+              <ItemArray
+                text={[
+                  "Compartment, Door Panel, Dashboard & Floor Mats Restoration",
+                ]}
+              />
               <ItemArray text={["Invisible interior glass"]} />
               <ItemArray text={["Advanced Steam Cleaning"]} />
               <ItemArray text={["Full Seat and Carpet Extraction"]} />
@@ -151,7 +166,7 @@ const Packages = () => {
               <ItemArray text={["Carpet Salt Stain Removal"]} />
               <ItemArray text={["Hand Wash"]} />
               <ItemArray text={["Pre-rinse"]} />
-              <ItemArray text={["Wheel Rim and Tire Cleaner"]} />
+              <ItemArray text={["Wheel Rim & Tire Cleaner"]} />
               <ItemArray text={["Full Exterior Wash and Dry"]} />
               <ItemArray text={["Full Salt Stain Removal"]} />
               <ItemArray text={["Full Black Finish on all appliances"]} />
@@ -164,7 +179,7 @@ const Packages = () => {
               <div className="text-center py-4">
                 <BookButtonStyle
                   onClick={() => {
-                    tawkMessenger.toggle();
+                    tawkMessenger.toggle()
                   }}
                   variant="contained"
                   className="bg-[#e9e8e8] text-black w-3/4 hover:bg-[#bbbbbb]"
@@ -231,59 +246,69 @@ const Packages = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Packages;
+export default Packages
 
 const ItemArray = ({ text }) => {
   return (
     <>
-      {Array.isArray(text) && text.map((v, i) => (
-        <div key={i} className="flex items-start pb-2">
-          <i className="text-lg mr-4 bi bi-bookmark-check-fill" />
-          {v}
-        </div>
-      ))}
+      {Array.isArray(text) &&
+        text.map((v, i) => (
+          <div key={i} className="flex items-start pb-2">
+            <i className="text-lg mr-4 bi bi-bookmark-check-fill" />
+            {v}
+          </div>
+        ))}
     </>
-  );
-};
+  )
+}
 
 const ItemArrayX = ({ text }) => {
   return (
     <>
-      {Array.isArray(text) && text.map((v, i) => (
-        <div key={i} className="flex items-start pb-2 line-through text-gray-400">
-          <i className="text-lg mr-4 bi bi-bookmark-x-fill" />
-          {v}
-        </div>
-      ))}
+      {Array.isArray(text) &&
+        text.map((v, i) => (
+          <div
+            key={i}
+            className="flex items-start pb-2 line-through text-gray-400"
+          >
+            <i className="text-lg mr-4 bi bi-bookmark-x-fill" />
+            {v}
+          </div>
+        ))}
     </>
-  );
-};
+  )
+}
 
 const ItemArrayB = ({ text }) => {
   return (
     <>
-      {Array.isArray(text) && text.map((v, i) => (
-        <div key={i} className="flex items-start pb-2 text-white">
-          <i className="text-lg mr-4 bi bi-bookmark-check-fill" />
-          {v}
-        </div>
-      ))}
+      {Array.isArray(text) &&
+        text.map((v, i) => (
+          <div key={i} className="flex items-start pb-2 text-white">
+            <i className="text-lg mr-4 bi bi-bookmark-check-fill" />
+            {v}
+          </div>
+        ))}
     </>
-  );
-};
+  )
+}
 
 const ItemArrayBX = ({ text }) => {
   return (
     <>
-      {Array.isArray(text) && text.map((v, i) => (
-        <div key={i} className="flex items-start pb-2 line-through text-gray-500">
-          <i className="text-lg mr-4 bi bi-bookmark-x-fill" />
-          {v}
-        </div>
-      ))}
+      {Array.isArray(text) &&
+        text.map((v, i) => (
+          <div
+            key={i}
+            className="flex items-start pb-2 line-through text-gray-500"
+          >
+            <i className="text-lg mr-4 bi bi-bookmark-x-fill" />
+            {v}
+          </div>
+        ))}
     </>
-  );
-};
+  )
+}

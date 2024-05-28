@@ -6540,6 +6540,7 @@ __metadata:
     css-loader: "npm:^7.1.2"
     flowbite: "npm:^2.3.0"
     flowbite-react: "npm:^0.9.0"
+    framer-motion: "npm:^11.2.6"
     gatsby: "npm:^5.13.3"
     gatsby-plugin-image: "npm:^3.13.1"
     gatsby-plugin-manifest: "npm:^5.13.1"
@@ -6549,6 +6550,7 @@ __metadata:
     gatsby-plugin-styled-components: "npm:^6.12.0"
     gatsby-source-filesystem: "npm:^5.12.1"
     gatsby-transformer-sharp: "npm:^5.12.3"
+    hamburger-react: "npm:^2.5.1"
     lodash: "npm:^4.17.21"
     moment: "npm:^2.30.1"
     owl.carousel: "npm:^2.3.4"
@@ -6559,6 +6561,7 @@ __metadata:
     react-compare-image: "npm:^3.4.0"
     react-countup: "npm:^6.5.3"
     react-dom: "npm:^18.3.1"
+    react-fast-marquee: "npm:^1.6.4"
     react-icons: "npm:^5.2.1"
     react-owl-carousel: "npm:^2.3.3"
     tailwindcss: "npm:^3.4.3"
@@ -8315,6 +8318,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framer-motion@npm:^11.2.6":
+  version: 11.2.6
+  resolution: "framer-motion@npm:11.2.6"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/e3e6e0869f0397b5f1c440bb3d0a825f904b55077f80e7f4c7354dccef70b135f542d414494b52de6014a53e35fbbc0feaa112d2700bca13aeab1b2010ac773e
+  languageName: node
+  linkType: hard
+
 "fresh@npm:0.5.2":
   version: 0.5.2
   resolution: "fresh@npm:0.5.2"
@@ -9371,6 +9394,15 @@ __metadata:
   dependencies:
     duplexer: "npm:^0.1.2"
   checksum: 10c0/4ccb924626c82125897a997d1c84f2377846a6ef57fbee38f7c0e6b41387fba4d00422274440747b58008b5d60114bac2349c2908e9aba55188345281af40a3f
+  languageName: node
+  linkType: hard
+
+"hamburger-react@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "hamburger-react@npm:2.5.1"
+  peerDependencies:
+    react: ^16.8 || ^17 || ^18
+  checksum: 10c0/99b22320bc6f9bcaa9ea974b15096cecb5ee08bb767b533158e0c8a1a2b4f78d8efb90710cf50fc3d989b7d92447d0d10272346a427908684fd13f0285a15de2
   languageName: node
   linkType: hard
 
@@ -13883,6 +13915,16 @@ __metadata:
   version: 6.0.11
   resolution: "react-error-overlay@npm:6.0.11"
   checksum: 10c0/8fc93942976e0c704274aec87dbc8e21f62a2cc78d1c93f9bcfff9f7494b00c60f7a2f0bd48d832bcd3190627c0255a1df907373f61f820371373a65ec4b2d64
+  languageName: node
+  linkType: hard
+
+"react-fast-marquee@npm:^1.6.4":
+  version: 1.6.4
+  resolution: "react-fast-marquee@npm:1.6.4"
+  peerDependencies:
+    react: ">= 16.8.0 || 18.0.0"
+    react-dom: ">= 16.8.0 || 18.0.0"
+  checksum: 10c0/bee73a9467d0d6556bbb33538b7e008a4b0a7355e457b6d57511eacc5d103a21e49fb7928ed7fd964e4b53469a7d1ca6d6944b5d527abe7048cde3a1483215b3
   languageName: node
   linkType: hard
 

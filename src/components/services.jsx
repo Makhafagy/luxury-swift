@@ -4,8 +4,7 @@ import Icon1 from '../images/headlight.png';
 import Icon2 from '../images/car.png';
 import Icon3 from '../images/car-wash.png';
 import Icon4 from '../images/ceramic-coating.png';
-import MainImage from '../images/ceramic-coating.png';
-
+import { motion} from 'framer-motion';
 
 const IndexPage = () => {
   const services = [
@@ -32,10 +31,15 @@ const IndexPage = () => {
   return (
     <div className="container mx-auto p-4">
       {/* First Row */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.8 }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8"
+      >
         <div className="flex justify-center">
           <StaticImage
-            src={MainImage}
+            src='../images/ceramic-coating.png'
             alt="Service"
             className="w-full h-auto"
           />
@@ -49,14 +53,19 @@ const IndexPage = () => {
             Learn More
           </button>
         </div>
-      </div>
+      </motion.div>
 
       {/* Second Row */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.8 }}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+      >
         {services.map((service, index) => (
           <div key={index} className="flex flex-col items-center p-4 border rounded shadow">
             <div className="mb-2">
-              <img src={icons[index]} alt={`${service.title} icon`} className="w-12 h-12"/>
+              <img src={icons[index]} alt={`${service.title} icon`} className="w-12 h-12" />
             </div>
             <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
             <p className="text-center">
@@ -64,7 +73,7 @@ const IndexPage = () => {
             </p>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

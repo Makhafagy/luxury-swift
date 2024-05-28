@@ -14,16 +14,15 @@ import ListItemText from "@mui/material/ListItemText"
 import IconButton from "@mui/material/IconButton"
 import MenuIcon from "@mui/icons-material/Menu"
 import { TawkContext } from "../providers"
-// import BusinessName from "../images/business_name2.png"
-import BusinessName1 from "../images/business_name.png"
+import BusinessName1 from "../images/nav-logo.png"
 import TopBar from "./topbar"
 
 const Navbar = () => {
   return (
     <>
-      <div>
+      {/* <div>
         <TopBar />
-      </div>
+      </div> */}
       <div>
         <AppNavBar />
       </div>
@@ -35,6 +34,8 @@ export default Navbar
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
   transition: 0.2s;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   &:hover {
     color: blue;
   }
@@ -42,29 +43,43 @@ const ListItemButtonStyle = styled(ListItemButton)`
 
 const AppBarStyle = styled(AppBar)`
   height: 80px;
-  background: #ffffff;
+  background: #242424;
   position: fixed;
-  margin-top: 60.64px;
   /* border-top: 1px solid #242424; */
 `
 
 const LinksStyle = styled.a`
-  color: black;
+  color: #adadad;
   text-decoration: none;
   text-transform: uppercase;
   margin-left: 16px;
-  transition: 0.2s;
-  &:hover {
-    color: grey;
+  white-space: nowrap;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0; 
+    height: 2px; 
+    background-color: transparent; 
+    transition: width 0.4s ease; 
+  }
+
+  &:hover:after {
+    width: 100%; 
+    background-color: #228be6; 
   }
 `
 const BookButtonStyle = styled(Button)`
   color: #000000;
   margin-left: 16px;
-  background: #e9e8e8;
+  background: #228be6;
   white-space: nowrap;
+  transition: 0.2s;
   &:hover {
-    background: #bbbbbb;
+    background: #3ca4ff;
   }
 `
 
@@ -79,19 +94,16 @@ const AppNavBar = props => {
     setMobileOpen(prevState => !prevState)
   }
 
-  
-
-  
-
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        <img
+        [Business Name]
+        {/* <img
           src={BusinessName1}
           width={180}
           alt="logo"
           style={{ marginLeft: "auto", marginRight: "auto" }}
-        />
+        /> */}
       </Typography>
       <Divider />
       <List>
@@ -146,14 +158,12 @@ const AppNavBar = props => {
             <div
               href="/"
               style={{
-                color: "black",
+                color: "white",
                 textDecoration: "none",
                 display: "flex",
               }}
             >
-              <img src={BusinessName1} width={190} alt="logo" />
-              {/* <span style={{ fontFamily: "sans-serif" }}>Daily Details </span>
-              &nbsp;Ottawa */}
+              <img src={BusinessName1} width={220} alt="logo" />
             </div>
           </Typography>
 
