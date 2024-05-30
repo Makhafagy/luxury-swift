@@ -1,8 +1,8 @@
 {
-  "name": "dailydetailsottawa",
+  "name": "autodetailtemplate",
   "version": "1.0.0",
   "private": true,
-  "description": "dailydetailsottawa",
+  "description": "auto detail template",
   "author": "hussaa",
   "keywords": [
     "gatsby"

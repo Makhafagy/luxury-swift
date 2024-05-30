@@ -15,21 +15,8 @@ import IconButton from "@mui/material/IconButton"
 import MenuIcon from "@mui/icons-material/Menu"
 import { TawkContext } from "../providers"
 import BusinessName1 from "../images/nav-logo.png"
-import TopBar from "./topbar"
 
-const Navbar = () => {
-  return (
-    <>
-      {/* <div>
-        <TopBar />
-      </div> */}
-      <div>
-        <AppNavBar />
-      </div>
-    </>
-  )
-}
-export default Navbar
+
 
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
@@ -88,8 +75,8 @@ const drawerWidth = 240
 const AppNavBar = props => {
   const { tawkMessenger } = React.useContext(TawkContext)
   const { window } = props
+  const {openModal} = props
   const [mobileOpen, setMobileOpen] = React.useState(false)
-
   const handleDrawerToggle = () => {
     setMobileOpen(prevState => !prevState)
   }
@@ -225,5 +212,7 @@ const AppNavBar = props => {
         </Drawer>
       </nav>
     </Box>
+    
   )
 }
+export default AppNavBar;

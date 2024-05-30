@@ -4965,6 +4965,54 @@ __metadata:
   languageName: node
   linkType: hard
 
+"autodetailtemplate@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "autodetailtemplate@workspace:."
+  dependencies:
+    "@emotion/react": "npm:^11.11.4"
+    "@emotion/styled": "npm:^11.11.5"
+    "@fortawesome/fontawesome-free": "npm:^6.5.2"
+    "@fortawesome/fontawesome-svg-core": "npm:^6.5.2"
+    "@mantine/core": "npm:^7.9.2"
+    "@mantine/hooks": "npm:^7.9.2"
+    "@mui/icons-material": "npm:^5.14.16"
+    "@mui/material": "npm:^5.15.18"
+    "@tabler/icons-react": "npm:^3.4.0"
+    "@tawk.to/tawk-messenger-react": "npm:^2.0.2"
+    antd: "npm:^5.17.3"
+    autoprefixer: "npm:^10.4.19"
+    bootstrap-icons: "npm:^1.11.2"
+    css-loader: "npm:^7.1.2"
+    flowbite: "npm:^2.3.0"
+    flowbite-react: "npm:^0.9.0"
+    framer-motion: "npm:^11.2.6"
+    gatsby: "npm:^5.13.3"
+    gatsby-plugin-image: "npm:^3.13.1"
+    gatsby-plugin-manifest: "npm:^5.13.1"
+    gatsby-plugin-postcss: "npm:^6.13.1"
+    gatsby-plugin-react-helmet: "npm:^6.13.1"
+    gatsby-plugin-sharp: "npm:^5.13.1"
+    gatsby-plugin-styled-components: "npm:^6.12.0"
+    gatsby-source-filesystem: "npm:^5.12.1"
+    gatsby-transformer-sharp: "npm:^5.12.3"
+    hamburger-react: "npm:^2.5.1"
+    lodash: "npm:^4.17.21"
+    moment: "npm:^2.30.1"
+    owl.carousel: "npm:^2.3.4"
+    postcss: "npm:^8.4.38"
+    postcss-preset-mantine: "npm:^1.15.0"
+    prettier: "npm:^2.6.2"
+    react: "npm:^18.2.0"
+    react-compare-image: "npm:^3.4.0"
+    react-countup: "npm:^6.5.3"
+    react-dom: "npm:^18.3.1"
+    react-fast-marquee: "npm:^1.6.4"
+    react-icons: "npm:^5.2.1"
+    react-owl-carousel: "npm:^2.3.3"
+    tailwindcss: "npm:^3.4.3"
+  languageName: unknown
+  linkType: soft
+
 "autoprefixer@npm:^10.4.14, autoprefixer@npm:^10.4.19":
   version: 10.4.19
   resolution: "autoprefixer@npm:10.4.19"
@@ -6519,54 +6567,6 @@ __metadata:
   checksum: 10c0/3e6ede10cd3b77586c47da48423b62bed161bf1a48bdbcc94d87263522e22f5dfb0e678a6dba5323fdc14c5d8612b7f7eb9e7d9e37b2e2d67a7bf9f116dabe5a
   languageName: node
   linkType: hard
-
-"dailydetailsottawa@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "dailydetailsottawa@workspace:."
-  dependencies:
-    "@emotion/react": "npm:^11.11.4"
-    "@emotion/styled": "npm:^11.11.5"
-    "@fortawesome/fontawesome-free": "npm:^6.5.2"
-    "@fortawesome/fontawesome-svg-core": "npm:^6.5.2"
-    "@mantine/core": "npm:^7.9.2"
-    "@mantine/hooks": "npm:^7.9.2"
-    "@mui/icons-material": "npm:^5.14.16"
-    "@mui/material": "npm:^5.15.18"
-    "@tabler/icons-react": "npm:^3.4.0"
-    "@tawk.to/tawk-messenger-react": "npm:^2.0.2"
-    antd: "npm:^5.17.3"
-    autoprefixer: "npm:^10.4.19"
-    bootstrap-icons: "npm:^1.11.2"
-    css-loader: "npm:^7.1.2"
-    flowbite: "npm:^2.3.0"
-    flowbite-react: "npm:^0.9.0"
-    framer-motion: "npm:^11.2.6"
-    gatsby: "npm:^5.13.3"
-    gatsby-plugin-image: "npm:^3.13.1"
-    gatsby-plugin-manifest: "npm:^5.13.1"
-    gatsby-plugin-postcss: "npm:^6.13.1"
-    gatsby-plugin-react-helmet: "npm:^6.13.1"
-    gatsby-plugin-sharp: "npm:^5.13.1"
-    gatsby-plugin-styled-components: "npm:^6.12.0"
-    gatsby-source-filesystem: "npm:^5.12.1"
-    gatsby-transformer-sharp: "npm:^5.12.3"
-    hamburger-react: "npm:^2.5.1"
-    lodash: "npm:^4.17.21"
-    moment: "npm:^2.30.1"
-    owl.carousel: "npm:^2.3.4"
-    postcss: "npm:^8.4.38"
-    postcss-preset-mantine: "npm:^1.15.0"
-    prettier: "npm:^2.6.2"
-    react: "npm:^18.2.0"
-    react-compare-image: "npm:^3.4.0"
-    react-countup: "npm:^6.5.3"
-    react-dom: "npm:^18.3.1"
-    react-fast-marquee: "npm:^1.6.4"
-    react-icons: "npm:^5.2.1"
-    react-owl-carousel: "npm:^2.3.3"
-    tailwindcss: "npm:^3.4.3"
-  languageName: unknown
-  linkType: soft
 
 "damerau-levenshtein@npm:^1.0.8":
   version: 1.0.8

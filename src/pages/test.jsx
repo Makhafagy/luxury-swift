@@ -1,8 +1,19 @@
-import React from 'react'
-const Test = () => {
+import React, {useState} from "react"
+import Test from "../components/Test"
+import ModalIndex from "../components/modal"
+
+const Testindex = () => {
+  
   return (
-    <div></div>
+    <>
+      <section>
+        <Test />
+      </section>
+      <section>
+        <ModalIndex />
+      </section>
+    </>
   )
 }
 
-export default Test
+export default Testindex

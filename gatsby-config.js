@@ -5,7 +5,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `dailyDetailsOttawa`,
+    title: `AutoDetailTemplate`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [

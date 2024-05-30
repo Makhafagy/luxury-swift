@@ -22,7 +22,7 @@ const placeholder = [
 
 export function FaqSimple() {
   return (
-    <MantineProvider defaultColorScheme="light">
+    <MantineProvider>
       <Container size="sm" className={classes.wrapper}>
         <Title ta="center" className={classes.title}>
           Frequently Asked Questions
