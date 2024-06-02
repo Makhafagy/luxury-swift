@@ -13,7 +13,7 @@ import {
   IconBrandGoogle,
   IconMap2,
 } from "@tabler/icons-react"
-import BusinessLogo from "../images/dailyLogo.png"
+import BusinessLogo from "../images/footer-logo.png"
 import * as classes from "../styles/FooterLinks.module.css"
 import React from "react"
 const data = [
@@ -73,10 +73,10 @@ export function FooterLinks() {
       <MantineProvider>
         <Container className={classes.inner}>
           <div className={classes.logo}>
-            <img className="size-14" src={BusinessLogo} alt="logo"/>
-            <Text size="md" c="dimmed" className={classes.description}>
-              Daily Details Ottawa
-            </Text>
+            <img className="w-auto" src={BusinessLogo} alt="logo"/>
+            {/* <Text size="md" c="dimmed" className={classes.description}>
+              
+            </Text> */}
           </div>
           <div className={classes.groups}>{groups}</div>
         </Container>

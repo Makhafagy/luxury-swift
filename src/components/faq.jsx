@@ -23,45 +23,45 @@ const placeholder = [
 export function FaqSimple() {
   return (
     <MantineProvider>
-      <Container size="sm" className={classes.wrapper}>
+      <Container size="md" className={classes.wrapper}>
         <Title ta="center" className={classes.title}>
           Frequently Asked Questions
         </Title>
 
         <Accordion variant="separated">
           <Accordion.Item className={classes.item} value="reset-password">
-            <Accordion.Control>
+            <Accordion.Control fz="lg">
               What services does your car detailing business offer?
             </Accordion.Control>
-            <Accordion.Panel>{placeholder[0].q1}</Accordion.Panel>
+            <Accordion.Panel fz="lg">{placeholder[0].q1}</Accordion.Panel>
           </Accordion.Item>
 
           <Accordion.Item className={classes.item} value="another-account">
-            <Accordion.Control>
+            <Accordion.Control fz="lg">
               How often should I get my car detailed?
             </Accordion.Control>
-            <Accordion.Panel>{placeholder[1].q2}</Accordion.Panel>
+            <Accordion.Panel fz="lg">{placeholder[1].q2}</Accordion.Panel>
           </Accordion.Item>
 
           <Accordion.Item className={classes.item} value="newsletter">
-            <Accordion.Control>
+            <Accordion.Control fz="lg">
               What is included in exterior detailing?
             </Accordion.Control>
-            <Accordion.Panel>{placeholder[2].q3}</Accordion.Panel>
+            <Accordion.Panel fz="lg">{placeholder[2].q3}</Accordion.Panel>
           </Accordion.Item>
 
           <Accordion.Item className={classes.item} value="credit-card">
-            <Accordion.Control>
+            <Accordion.Control fz="lg">
               What does interior cleaning do?
             </Accordion.Control>
-            <Accordion.Panel>{placeholder[3].q4}</Accordion.Panel>
+            <Accordion.Panel fz="lg">{placeholder[3].q4}</Accordion.Panel>
           </Accordion.Item>
 
           <Accordion.Item className={classes.item} value="payment">
-            <Accordion.Control>
+            <Accordion.Control fz="lg">
               How long does a detailing service typically take?
             </Accordion.Control>
-            <Accordion.Panel>{placeholder[4].q5}</Accordion.Panel>
+            <Accordion.Panel fz="lg">{placeholder[4].q5}</Accordion.Panel>
           </Accordion.Item>
         </Accordion>
       </Container>

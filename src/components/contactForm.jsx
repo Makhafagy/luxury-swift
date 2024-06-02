@@ -18,7 +18,7 @@ import * as classes from "../styles/GetInTouch.module.css";
 export function GetInTouch() {
   return (
     <MantineProvider defaultColorScheme="light">
-      <Container size="lg"> {/* Wrap your content with Container */}
+      <Container size="md">
         <Paper shadow="md" radius="lg">
           <div className={classes.wrapper}>
             <div

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-
+import { motion } from 'framer-motion';
 const LeftHalf = styled.div`
   min-height: 410px;
   box-sizing: border-box;
@@ -10,6 +10,7 @@ const LeftHalf = styled.div`
 const Title = styled.div`
   min-height: 260px;
   font-family: sans-serif;
+  background: rgba(94, 100, 105, 0.062);
 `
 const SecondTitle = styled.span`
   font-size: 32px !important;
@@ -17,7 +18,7 @@ const SecondTitle = styled.span`
   font-weight: bold;
 `
 const LeftText = styled.div`
-  background-color: #228be619;
+  background-color: #228be640;
   min-height: 150px;
   padding: 20px;
   color: #000000;
@@ -52,7 +53,12 @@ const AboutUs = () => {
         Daily Details Ottawa is a small auto detailing business providing the
         best quality services related to Exterior & Interior.
       </SectionDescription>
-      <div className="max-w-screen-lg mx-auto px-12 sm:px-16 lg:px-10">
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.8 }}
+        className="max-w-screen-lg mx-auto px-12 sm:px-16 lg:px-10">
+
         <div className="flex flex-wrap -mx-4">
           <LeftHalf className="w-full md:w-5/12">
             <Title className="flex">
@@ -72,7 +78,9 @@ const AboutUs = () => {
 
           <div className="w-full md:w-7/12 carpic" />
         </div>
-      </div>
+
+      </motion.div>
+
     </>
   )
 }

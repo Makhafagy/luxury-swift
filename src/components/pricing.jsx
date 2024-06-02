@@ -3,16 +3,18 @@ import { Button } from "@mui/material"
 import { TawkContext } from "../providers"
 import styled from "@emotion/styled"
 
-// className="bg-[#e9e8e8] text-black w-3/4 hover:bg-[#bbbbbb]"
-
 const BookButtonStyle = styled(Button)`
-  background: #e9e8e8;
-  color: black;
+  color: #000000;
+  margin-left: 16px;
+  background-color: #e9e8e8;
+  white-space: nowrap;
   width: 75%;
+  transition: 0.2s;
   &:hover {
     background: #bbbbbb;
   }
 `
+
 
 const Packages = () => {
   const { tawkMessenger } = React.useContext(TawkContext)
@@ -28,167 +30,147 @@ const Packages = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
       </div>
 
-      <div className="container-full px-5 md:px-3">
+      <div className="sm:container mx-auto 2xl:px-32">
         <div className="flex flex-wrap">
-          <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-3 mb-6">
-            <div className="relative p-10 rounded-lg border border-slate-700 shadow-md bg-white">
+          <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-1 mb-6">
+            <div className="relative p-10 rounded-lg border border-slate-400 shadow-md bg-white">
               <div className="text-xl font-medium py-2 flex items-center">
                 <i className="mr-2 bi bi-circle-half " />
-                Essential Daily Detail
+                Interior Detail
               </div>
               <div className="text-base mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </div>
               <div className="text-4xl mb-4">
-                $90 <span className="text-base text-gray-500">/ All Sizes</span>
+                $125 <span className="text-base text-gray-500">/ Starting</span>
               </div>
-              <ItemArray text={["Full interior vacuum."]} />
-              <ItemArray text={["Full soft brush wipe down"]} />
-              <ItemArray
-                text={[
-                  "Compartment, Door Panel, Dashboard & Floor Mats Restoration",
-                ]}
-              />
-              <ItemArray text={["Invisible interior glass"]} />
-              <ItemArrayX text={["Advanced Steam Cleaning"]} />
-              <ItemArrayX text={["Full Seat and Carpet Extraction"]} />
-              <ItemArrayX text={["UV Protection"]} />
-              <ItemArrayX text={["Carpet Salt Stain Removal"]} />
-              <ItemArrayX text={["Hand Wash"]} />
-              <ItemArrayX text={["Pre-rinse"]} />
-              <ItemArrayX text={["Wheel Rim & Tire Cleaner"]} />
-              <ItemArrayX text={["Full Exterior Wash and Dry"]} />
-              <ItemArrayX text={["Full Salt Stain Removal"]} />
-              <ItemArrayX text={["Full Black Finish on all appliances"]} />
-              <ItemArrayX text={["Full UV Protection"]} />
+              <ItemArray text={["Full Interior & Trunk Vacuum"]} />
+              <ItemArray text={["Full Wipe Down & Detail Brush Treatment"]} />
+              <ItemArray text={["Advanced Steam Clean"]} />
+              <ItemArray text={["Full Seat and Carpet Shampoo"]} />
+              <ItemArray text={["Windows clean"]} />
+              <ItemArray text={["Fabric Mat Shampoo"]} />
+              <ItemArray text={["Rubber Mats Clean"]} />
+              <ItemArray text={["Carpet Salt Stain Removal"]} />
+              <ItemArray text={["Full Interior Protectant"]} />
+              <ItemArray text={["Air Freshener"]} />
+              <ItemArrayX text={["5 Stage Foam Cannon Wash"]} />
+              <ItemArrayX text={["Wheel, Rim & Tire Clean"]} />
+              <ItemArrayX text={["Premium Towel Dry"]} />
               <ItemArrayX text={["Salt Protection on Carpets"]} />
-              <ItemArrayX text={["Full Exterior Detail"]} />
-              <ItemArrayX text={["Invisible glass"]} />
               <ItemArrayX text={["Clay Bar Restoration"]} />
-              <ItemArrayX text={["Complementary Cloth and ait Freshener"]} />
+              <ItemArrayX text={["1 Step Paint Polish"]} />
+              <ItemArrayX text={["Premium Ceramic Wax"]} />
+              <ItemArrayX text={["Odor Removal"]} />
+
               <div className="text-center py-4">
                 <BookButtonStyle
                   onClick={() => {
                     tawkMessenger.toggle()
                   }}
                   variant="contained"
-                  className="bg-[#e9e8e8] text-black w-3/4 hover:bg-[#bbbbbb]"
                 >
                   Book Now
                 </BookButtonStyle>
               </div>
               <div className="text-center text-base text-gray-500">
-                $110 for 7 seater
+                XL SUVs $145 & Vans/Trucks $155
               </div>
             </div>
           </div>
-          <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-3 mb-6">
-            <div className="relative p-10 rounded-lg shadow-md bg-zinc-900 text-white">
+          <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-1 mb-6">
+            <div className="relative p-10 rounded-lg border shadow-md bg-zinc-900 text-gray-200">
               <div className="absolute top-0 right-0 mt-0 mr-7 px-4 py-2 bg-[#e9e8e8] text-black font-semibold rounded-b-lg">
                 Best Deal
               </div>
               <div className="text-xl font-medium py-2 flex items-center">
                 <i className="mr-2 bi bi-circle-half" />
-                Elite Daily Detail
+                Complete Detail
               </div>
               <div className="text-base mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </div>
               <div className="text-4xl mb-4">
-                $140 <span className="text-base text-gray-400">/ Starting</span>
+                $170 <span className="text-base text-gray-400">/ Starting</span>
               </div>
-              <ItemArrayB text={["Full interior vacuum."]} />
-              <ItemArrayB text={["Full soft brush wipe down"]} />
-              <ItemArrayB
-                text={[
-                  "Compartment, Door Panel, Dashboard & Floor Mats Restoration",
-                ]}
-              />
-              <ItemArrayB text={["Invisible interior glass"]} />
-              <ItemArrayB text={["Advanced Steam Cleaning"]} />
-              <ItemArrayB text={["Full Seat and Carpet Extraction"]} />
-              <ItemArrayB text={["UV Protection"]} />
+              <ItemArrayB text={["Full Interior & Trunk Vacuum"]} />
+              <ItemArrayB text={["Full Wipe Down & Detail Brush Treatment"]} />
+              <ItemArrayB text={["Advanced Steam Clean"]} />
+              <ItemArrayB text={["Full Seat and Carpet Shampoo"]} />
+              <ItemArrayB text={["Windows clean"]} />
+              <ItemArrayB text={["Fabric Mat Shampoo"]} />
+              <ItemArrayB text={["Rubber Mats Clean"]} />
               <ItemArrayB text={["Carpet Salt Stain Removal"]} />
-              <ItemArrayB text={["Hand Wash"]} />
-              <ItemArrayB text={["Pre-rinse"]} />
-              <ItemArrayB text={["Wheel Rim & Tire Cleaner"]} />
-              <ItemArrayB text={["Full Exterior Wash and Dry"]} />
-              <ItemArrayBX text={["Full Salt Stain Removal"]} />
-              <ItemArrayBX text={["Full Black Finish on all appliances"]} />
-              <ItemArrayBX text={["Full UV Protection"]} />
+              <ItemArrayB text={["Full Interior Protectant"]} />
+              <ItemArrayB text={["Air Freshener"]} />
+              <ItemArrayB text={["5 Stage Foam Cannon Wash"]} />
+              <ItemArrayB text={["Wheel, Rim & Tire Clean"]} />
+              <ItemArrayB text={["Premium Towel Dry"]} />
               <ItemArrayBX text={["Salt Protection on Carpets"]} />
-              <ItemArrayBX text={["Full Exterior Detail"]} />
-              <ItemArrayBX text={["Invisible glass"]} />
               <ItemArrayBX text={["Clay Bar Restoration"]} />
-              <ItemArrayBX text={["Complementary Cloth and ait Freshener"]} />
+              <ItemArrayBX text={["1 Step Paint Polish"]} />
+              <ItemArrayBX text={["Premium Ceramic Wax"]} />
+              <ItemArrayBX text={["Odor Removal"]} />
               <div className="text-center py-4">
                 <BookButtonStyle
                   onClick={() => {
                     tawkMessenger.toggle()
                   }}
                   variant="contained"
-                  className="bg-[#cccbcb] text-black w-3/4 hover:bg-[#bbbbbb]"
                 >
                   Book Now
                 </BookButtonStyle>
               </div>
               <div className="text-center text-base text-gray-300">
-                $160 for 7 seater
+                XL SUVs $190 & Vans/Trucks $200
               </div>
             </div>
           </div>
-          <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-3 mb-6">
-            <div className="relative p-10 rounded-lg border border-slate-700 shadow-md bg-white">
+          <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-1 mb-6">
+            <div className="relative p-10 rounded-lg border border-slate-400 shadow-md bg-white">
               <div className="text-xl font-medium py-2 flex items-center">
                 <i className="mr-2 bi bi-circle-half" />
-                Supreme Daily Detail
+                Ultimate Detail
               </div>
               <div className="text-base mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </div>
               <div className="text-4xl mb-4">
-                $190 <span className="text-base text-gray-400">/ Starting</span>
+                $260 <span className="text-base text-gray-400">/ Starting</span>
               </div>
-              <ItemArray text={["Full interior vacuum."]} />
-              <ItemArray text={["Full soft brush wipe down"]} />
-              <ItemArray
-                text={[
-                  "Compartment, Door Panel, Dashboard & Floor Mats Restoration",
-                ]}
-              />
-              <ItemArray text={["Invisible interior glass"]} />
-              <ItemArray text={["Advanced Steam Cleaning"]} />
-              <ItemArray text={["Full Seat and Carpet Extraction"]} />
-              <ItemArray text={["UV Protection"]} />
+              <ItemArray text={["Full Interior & Trunk Vacuum"]} />
+              <ItemArray text={["Full Wipe Down & Detail Brush Treatment"]} />
+              <ItemArray text={["Advanced Steam Clean"]} />
+              <ItemArray text={["Full Seat and Carpet Shampoo"]} />
+              <ItemArray text={["Windows clean"]} />
+              <ItemArray text={["Fabric Mat Shampoo"]} />
+              <ItemArray text={["Rubber Mats Clean"]} />
               <ItemArray text={["Carpet Salt Stain Removal"]} />
-              <ItemArray text={["Hand Wash"]} />
-              <ItemArray text={["Pre-rinse"]} />
-              <ItemArray text={["Wheel Rim & Tire Cleaner"]} />
-              <ItemArray text={["Full Exterior Wash and Dry"]} />
-              <ItemArray text={["Full Salt Stain Removal"]} />
-              <ItemArray text={["Full Black Finish on all appliances"]} />
-              <ItemArray text={["Full UV Protection"]} />
+              <ItemArray text={["Full Interior Protectant"]} />
+              <ItemArray text={["Air Freshener"]} />
+              <ItemArray text={["5 Stage Foam Cannon Wash"]} />
+              <ItemArray text={["Wheel, Rim & Tire Clean"]} />
+              <ItemArray text={["Premium Towel Dry"]} />
               <ItemArray text={["Salt Protection on Carpets"]} />
-              <ItemArray text={["Full Exterior Detail"]} />
-              <ItemArray text={["Invisible glass"]} />
               <ItemArray text={["Clay Bar Restoration"]} />
-              <ItemArray text={["Complementary Cloth and ait Freshener"]} />
+              <ItemArray text={["1 Step Paint Polish"]} />
+              <ItemArray text={["Premium Ceramic Wax"]} />
+              <ItemArray text={["Odor Removal"]} />
               <div className="text-center py-4">
                 <BookButtonStyle
                   onClick={() => {
                     tawkMessenger.toggle()
                   }}
                   variant="contained"
-                  className="bg-[#e9e8e8] text-black w-3/4 hover:bg-[#bbbbbb]"
                 >
                   Book Now
                 </BookButtonStyle>
               </div>
               <div className="text-center text-base text-gray-500">
-                $210 for 7 seater
+                XL SUVs $280 & Vans/Trucks $290
               </div>
             </div>
           </div>
@@ -256,7 +238,7 @@ const ItemArray = ({ text }) => {
     <>
       {Array.isArray(text) &&
         text.map((v, i) => (
-          <div key={i} className="flex items-start pb-2">
+          <div key={i} className="flex items-start pb-2 capitalize">
             <i className="text-lg mr-4 bi bi-bookmark-check-fill" />
             {v}
           </div>
@@ -272,7 +254,7 @@ const ItemArrayX = ({ text }) => {
         text.map((v, i) => (
           <div
             key={i}
-            className="flex items-start pb-2 line-through text-gray-400"
+            className="flex items-start pb-2 line-through text-gray-400 capitalize"
           >
             <i className="text-lg mr-4 bi bi-bookmark-x-fill" />
             {v}
@@ -287,7 +269,7 @@ const ItemArrayB = ({ text }) => {
     <>
       {Array.isArray(text) &&
         text.map((v, i) => (
-          <div key={i} className="flex items-start pb-2 text-white">
+          <div key={i} className="flex items-start pb-2 text-gray-200 capitalize">
             <i className="text-lg mr-4 bi bi-bookmark-check-fill" />
             {v}
           </div>
@@ -303,7 +285,7 @@ const ItemArrayBX = ({ text }) => {
         text.map((v, i) => (
           <div
             key={i}
-            className="flex items-start pb-2 line-through text-gray-500"
+            className="flex items-start pb-2 line-through text-gray-500 capitalize"
           >
             <i className="text-lg mr-4 bi bi-bookmark-x-fill" />
             {v}

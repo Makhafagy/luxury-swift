@@ -10,7 +10,7 @@
   width: rem(160px);
   top: 0;
   left: 0;
-  background-color: var(--mantine-color-blue-light);
+  background-color: #228be640;
   background-size: 16px 16px;
   z-index: 1;
 }
