@@ -78,23 +78,23 @@ const testimonials = [
   {
     quote:
       "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
-    name: "Amanda",
+    name: "Anna Garcia",
     role: "1 Day ago",
-    image: "https://avatar.iran.liara.run/public/93",
+    image: "https://ui-avatars.com/api/?name=Anna+Garcia",
   },
   {
     quote:
       "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
-    name: "Jacob",
+    name: "Miriam Jasim",
     role: "4 Days ago",
-    image: "https://avatar.iran.liara.run/public/37",
+    image: `https://ui-avatars.com/api/?name=Miriam+Jasim`,
   },
   {
     quote:
       "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
-    name: "Ash",
+    name: "Peter Ross",
     role: "10 Days ago",
-    image: "https://avatar.iran.liara.run/public/boy?username=Ash",
+    image: "https://ui-avatars.com/api/?name=Peter+Ross",
   },
 ];
 

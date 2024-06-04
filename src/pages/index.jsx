@@ -14,7 +14,7 @@ import Gallery from "../components/gallery"
 const links = [
   { label: "About", href: "#About"},
   { label: "Packages", href: "#Packages" },
-  { label: "Services", href: "#Services" },
+  { label: "Services", href: "#Service" },
   { label: "Contact", href: "#Contact" },
   { label: "Gallery", href: "#Gallery" },
 ]
@@ -40,22 +40,22 @@ const IndexPage = () => {
         <section style={{ marginTop: "100px" }}>
           <FeaturesAsymmetrical />
         </section>
-        <section style={{ minHeight: "" }}>
+        <section id="About" style={{ paddingTop: "10px" }}>
           <AboutUs />
         </section>
         <section style={{ marginTop: "150px" }}>
           <StatsGroup />
         </section>
-        <section style={{ marginTop: "100px" }}>
+        <section id="Packages" style={{ paddingTop: "100px" }}>
           <Packages />
         </section>
         <section style={{ marginTop: "150px" }}>
           <Testimonial />
         </section>
-        <section style={{ marginTop: "150px" }}>
+        <section id="Service" style={{ paddingTop: "150px" }}>
           <ServiceSection />
         </section>
-        <section>
+        <section id="Gallery">
           <Gallery/>
         </section>
         <section style={{ marginTop: "150px", marginBottom: "50px"  }}>

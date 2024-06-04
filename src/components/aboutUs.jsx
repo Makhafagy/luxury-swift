@@ -63,7 +63,7 @@ const AboutUs = () => {
           <LeftHalf className="w-full md:w-5/12">
             <Title className="flex">
               <div className="text-base/7 p-4">
-                ABOUT US <br /> <SecondTitle>#1 in Ottawa</SecondTitle>
+                ABOUT US <br /> <SecondTitle>#1 in Toronto</SecondTitle>
               </div>
             </Title>
 

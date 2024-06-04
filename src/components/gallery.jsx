@@ -9,7 +9,7 @@ class Gallery extends Component {
         return (
             <>
                 <div className="py-12 bg-[#bdbdbd] bg-opacity-20 sm:py-16 lg:py-20 bg-[radial-gradient(#00000029_1px,transparent_1px)] [background-size:16px_16px]">
-                    <div className="text-center text-uppercase text-gray-600 text-lg mb-10">
+                    <div className="text-center text-uppercase text-gray-600 text-lg mb-10 font-medium">
                         Gallery
                     </div>
                     <div className="text-3xl font-bold text-center text-black mb-10">

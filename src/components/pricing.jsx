@@ -20,7 +20,7 @@ const Packages = () => {
   const { tawkMessenger } = React.useContext(TawkContext)
   return (
     <>
-      <div className="text-center text-lg capitalize mb-12 md:mb-5 text-gray-600">
+      <div className="text-center text-lg text-gray-600 font-pj capitalize mb-12 md:mb-5">
         Pricing
       </div>
       <div className="text-5xl text-center uppercase mb-8 md:text-3xl">
