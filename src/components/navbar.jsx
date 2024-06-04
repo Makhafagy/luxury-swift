@@ -15,6 +15,7 @@ import IconButton from "@mui/material/IconButton"
 import MenuIcon from "@mui/icons-material/Menu"
 import { TawkContext } from "../providers"
 import BusinessName1 from "../images/nav-logo.png"
+// import BusinessName from "../images/footer-logo.png"
 
 
 
@@ -69,59 +70,28 @@ const BookButtonStyle = styled(Button)`
     background: #3ca4ff;
   }
 `
-
 const drawerWidth = 240
 
-const AppNavBar = props => {
+const AppNavBar = ({ window, openModal, links = [] }) => {
   const { tawkMessenger } = React.useContext(TawkContext)
-  const { window } = props
-  const {openModal} = props
   const [mobileOpen, setMobileOpen] = React.useState(false)
   const handleDrawerToggle = () => {
     setMobileOpen(prevState => !prevState)
   }
-
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        [Business Name]
-        {/* <img
-          src={BusinessName1}
-          width={180}
-          alt="logo"
-          style={{ marginLeft: "auto", marginRight: "auto" }}
-        /> */}
+      <Typography variant="h5" sx={{ my: 2}}>
+      Auto Detail
       </Typography>
       <Divider />
       <List>
-        <ListItem>
-          <ListItemButtonStyle href="#About" sx={{ textAlign: "center" }}>
-            <ListItemText primary="About" />
-          </ListItemButtonStyle>
-        </ListItem>
-        <ListItem>
-          <ListItemButtonStyle href="#Packages" sx={{ textAlign: "center" }}>
-            <ListItemText primary="Packages" />
-          </ListItemButtonStyle>
-        </ListItem>
-        <ListItem>
-          <ListItemButtonStyle href="#Services" sx={{ textAlign: "center" }}>
-            <ListItemText primary="Services" />
-          </ListItemButtonStyle>
-        </ListItem>
-        <ListItem>
-          <ListItemButtonStyle
-            href="tel:+12269985884"
-            sx={{ textAlign: "center" }}
-          >
-            <ListItemText primary="Call Us" />
-          </ListItemButtonStyle>
-        </ListItem>
-        <ListItem>
-          <ListItemButtonStyle href="#Gallery" sx={{ textAlign: "center" }}>
-            <ListItemText primary="Gallery" />
-          </ListItemButtonStyle>
-        </ListItem>
+        {links.map((v, i) => (
+          <ListItem key={i}>
+            <ListItemButtonStyle href={v.href} sx={{ textAlign: "center" }}>
+              <ListItemText primary={v.label} />
+            </ListItemButtonStyle>
+          </ListItem>
+        ))}
       </List>
     </Box>
   )
@@ -137,12 +107,12 @@ const AppNavBar = props => {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, color: "dark", display: { md: "none" } }}
+            sx={{ mr: 2, color: "white", display: { md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div">
-            <div
+            <a
               href="/"
               style={{
                 color: "white",
@@ -151,7 +121,7 @@ const AppNavBar = props => {
               }}
             >
               <img src={BusinessName1} width={220} alt="logo" />
-            </div>
+            </a>
           </Typography>
 
           <Box
@@ -162,11 +132,9 @@ const AppNavBar = props => {
             }}
             style={{ marginLeft: "auto" }}
           >
-            <LinksStyle href="#About">About</LinksStyle>
-            <LinksStyle href="#Packages">Packages</LinksStyle>
-            <LinksStyle href="#Services">Services</LinksStyle>
-            <LinksStyle href="tel:+12269985884">Call us</LinksStyle>
-            <LinksStyle href="#Gallery">Gallery</LinksStyle>
+            {links.map((v,i) => (
+              <LinksStyle disabled={v.disabled} key={i} href={v.href}>{v.label}</LinksStyle>
+            ))}
             <BookButtonStyle
               onClick={() => {
                 tawkMessenger.toggle()
@@ -212,7 +180,7 @@ const AppNavBar = props => {
         </Drawer>
       </nav>
     </Box>
-    
+
   )
 }
 export default AppNavBar;

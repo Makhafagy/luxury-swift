@@ -8,7 +8,6 @@ import {
   Group,
   SimpleGrid,
   MantineProvider,
-  Center,
   Container, // Import Container from Mantine
 } from "@mantine/core";
 import ContactIconsList from "./ContactIcons";
@@ -18,7 +17,7 @@ import * as classes from "../styles/GetInTouch.module.css";
 export function GetInTouch() {
   return (
     <MantineProvider defaultColorScheme="light">
-      <Container size="md">
+      <Container size="lg">
         <Paper shadow="md" radius="lg">
           <div className={classes.wrapper}>
             <div
@@ -54,14 +53,14 @@ export function GetInTouch() {
                   mt="md"
                   label="Subject"
                   placeholder="Subject"
-                  required
+                  
                 />
 
                 <Textarea
                   mt="md"
                   label="Your message"
                   placeholder="Please include all relevant information"
-                  minRows={3}
+                  minRows={4}
                 />
 
                 <Group justify="flex-end" mt="md">

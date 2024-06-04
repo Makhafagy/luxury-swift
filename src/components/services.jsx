@@ -9,19 +9,19 @@ import { motion } from 'framer-motion';
 const IndexPage = () => {
   const services = [
     {
-      title: 'Service 1',
+      title: 'Headlights Restoration',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.',
     },
     {
-      title: 'Service 2',
+      title: 'Paint Correction',
       description: 'Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.',
     },
     {
-      title: 'Service 3',
+      title: 'Premium Wax',
       description: 'Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.',
     },
     {
-      title: 'Service 4',
+      title: 'Ceramic Coating',
       description: 'Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora.',
     },
   ];

@@ -3,58 +3,23 @@ import Navbar from "../components/navbar"
 import HeroCarousel from "../components/hero"
 import { FeaturesAsymmetrical } from "../components/features"
 import AboutUs from "../components/aboutUs"
-import { FaqSimple } from "../components/faq"
-// import ContactCard from "../components/contactCard"
 import StatsGroup from "../components/stats"
 import { FooterLinks } from "../components/footer"
 import Testimonial from "../components/testimonial"
 import Packages from "../components/pricing"
 import ServiceSection from "../components/services"
 import { GetInTouch } from "../components/contactForm"
-import styled from '@emotion/styled'
+import Gallery from "../components/gallery"
 
-const DreamySection = styled.section`
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 400px;
-    padding-top: 100px;
-    background: #3c31dd;
-    overflow: hidden; 
-`;
+const links = [
+  { label: "About", href: "#About"},
+  { label: "Packages", href: "#Packages" },
+  { label: "Services", href: "#Services" },
+  { label: "Contact", href: "#Contact" },
+  { label: "Gallery", href: "#Gallery" },
+]
 
-const Curve = styled.div`
-    position: absolute;
-    height: 250px;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
 
-    &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        border-radius: 100% 50%;
-        width: 55%;
-        height: 100%;
-        transform: translate(85%, 60%);
-        background-color: hsl(216, 21%, 16%);
-        
-    }
-
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        border-radius: 100% 50%;
-        width: 55%;
-        height: 100%;
-        background-color: #3c31dd;
-        transform: translate(-4%, 40%);
-         
-    }
-`;
 const IndexPage = () => {
   return (
     <>
@@ -67,7 +32,7 @@ const IndexPage = () => {
 
       <body>
         <section>
-          <Navbar />
+          <Navbar links={links}/>
         </section>
         <section style={{ marginTop: "63.99px" }}>
           <HeroCarousel />
@@ -90,13 +55,12 @@ const IndexPage = () => {
         <section style={{ marginTop: "150px" }}>
           <ServiceSection />
         </section>
-
-        <section style={{ marginTop: "150px" }}>
+        <section>
+          <Gallery/>
+        </section>
+        <section style={{ marginTop: "150px", marginBottom: "50px"  }}>
           <GetInTouch />
         </section>
-        <div style={{ marginTop: "50px" }}>
-          <FaqSimple />
-        </div>
         <section>
           <FooterLinks />
         </section>

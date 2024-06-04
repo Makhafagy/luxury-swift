@@ -50,7 +50,7 @@ const AboutUs = () => {
     <>
       <SectionHeading>WHO WE ARE</SectionHeading>
       <SectionDescription>
-        Daily Details Ottawa is a small auto detailing business providing the
+        Auto Detail is a small auto detailing business providing the
         best quality services related to Exterior & Interior.
       </SectionDescription>
       <motion.div
