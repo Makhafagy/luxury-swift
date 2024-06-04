@@ -26,24 +26,24 @@ const LeftText = styled.div`
   font-family: sans-serif;
 `
 
-const SectionHeading = styled.div`
-  margin-top: 6rem !important;
-  font-size: 35pt;
-  color: black;
-  text-align: center;
-  @media screen and (max-width: 600px) {
-    font-size: 25pt;
-  }
-`
-const SectionDescription = styled.div`
-  font-size: 12pt;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: #8a8a8a;
-  margin-bottom: 70px;
-  margin-left: 23px;
-  margin-right: 23px;
-`
+// const SectionHeading = styled.div`
+//   margin-top: 6rem !important;
+//   font-size: 35pt;
+//   color: black;
+//   text-align: center;
+//   @media screen and (max-width: 600px) {
+//     font-size: 25pt;
+//   }
+// `
+// const SectionDescription = styled.div`
+//   font-size: 12pt;
+//   font-family: Arial, Helvetica, sans-serif;
+//   text-align: center;
+//   color: #8a8a8a;
+//   margin-bottom: 70px;
+//   margin-left: 23px;
+//   margin-right: 23px;
+// `
 
 const AboutUs = () => {
   return (

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ReactCompareImage from "react-compare-image";
-import {motion} from 'framer-motion'
 class Gallery extends Component {
     render() {
         const before = require("../images/before2.webp").default;

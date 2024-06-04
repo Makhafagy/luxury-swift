@@ -36,15 +36,15 @@ const Contact = () => {
                         <h2 className="text-xl font-semibold mb-6 font-sans">Send us a message</h2>
                         <form className="space-y-6">
                             <div>
-                                <label className="block text-gray-800 font-sans mb-2">Your name</label>
+                                <label htmlFor="name" className="block text-gray-800 font-sans mb-2">Your name</label>
                                 <input type="text" placeholder="enter your name" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" />
                             </div>
                             <div>
-                                <label className="block text-gray-800 font-sans mb-2">Email Address</label>
+                                <label htmlFor="email" className="block text-gray-800 font-sans mb-2">Email Address</label>
                                 <input type="email" placeholder="Enter your email" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" />
                             </div>
                             <div>
-                                <label className="block text-gray-800 font-sans mb-2">Write Your Message</label>
+                                <label htmlFor="message" className="block text-gray-800 font-sans mb-2">Write Your Message</label>
                                 <textarea placeholder="How can we help?" className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"></textarea>
                             </div>
                             <div className='flex flex-row gap-2'>
