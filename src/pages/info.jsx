@@ -19,7 +19,7 @@ const InfoPage = () => {
         <section style={{ paddingTop: "150px" }}>
             <Terms />
         </section>
-        <div className='sm:w-5/6 mx-auto'>
+        <div id="FAQ" className='sm:w-5/6 mx-auto'>
           <FaqSimple />
         </div>
     </div>

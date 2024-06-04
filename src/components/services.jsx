@@ -36,7 +36,7 @@ const IndexPage = () => {
       <div className="sm:container mx-auto p-4 sm:px-14 2xl:px-44 xl:px-24">
         {/* First Row */}
         <motion.div
-          initial={{ opacity: 0, y: 1 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.8 }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8"

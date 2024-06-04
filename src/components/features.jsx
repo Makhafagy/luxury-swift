@@ -58,19 +58,19 @@ const mockdata = [
     icon: IconTruck,
     title: "Mobile & On Site Services",
     description:
-      "As electricity builds up inside its body, it becomes more aggressive. One theory is that the electricity.",
+      "We provide top-tier car detailing directly to you. With both on-site and mobile options.",
   },
   {
     icon: IconCoin,
     title: "Very Affordable Pricing",
     description:
-      "Slakoth’s heart beats just once a minute. Whatever happens, it is content to loaf around motionless.",
+      "Experience top-notch service without the high cost that won't strain your budget.",
   },
   {
     icon: IconCalendarPlus,
     title: "Book Online Now",
     description:
-      "Thought to have gone extinct, Relicanth was given a name that is a variation of the name of the person who discovered.",
+      "Lock in your car detailing appointment with ease by booking online with Auto Detail.",
   },
 ]
 

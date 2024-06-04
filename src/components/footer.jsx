@@ -20,28 +20,28 @@ const data = [
   {
     title: "About",
     links: [
-      { label: "Features", link: "#" },
-      { label: "Stats", link: "#" },
-      { label: "FAQ", link: "#" },
-      { label: "Terms & Conditions", link: "#" },
+      { label: "Testimonial", href: "#Testimonial" },
+      { label: "Stats", href: "#Stats" },
+      { label: "FAQ", href: "/info/#FAQ" },
+      { label: "Terms & Conditions", href: "/info" },
     ],
   },
   {
     title: "Services",
     links: [
-      { label: "Packages", link: "#" },
-      { label: "Add-ons", link: "#" },
-      { label: "Mobile Detailing", link: "#" },
-      { label: "Ceramic Coating", link: "#" },
+      { label: "Packages", href: "#Packages" },
+      { label: "Add-ons", href: "#" },
+      { label: "Headlight Restoration", href: "#Services" },
+      { label: "Ceramic Coating", href: "#Services" },
     ],
   },
   {
-    title: "Community",
+    title: "Socials",
     links: [
-      { label: "Join Discord", link: "#" },
-      { label: "Follow on Twitter", link: "#" },
-      { label: "Email newsletter", link: "#" },
-      { label: "GitHub discussions", link: "#" },
+      { label: "Write a review", href: "#" },
+      { label: "Follow on instagram", href: "#" },
+      { label: "Our Facebook page", href: "#" },
+      { label: "Check our Tiktok", href: "#" },
     ],
   },
 ]
@@ -53,8 +53,8 @@ export function FooterLinks() {
         key={index}
         className={classes.link}
         component="a"
-        href={link.link}
-        onClick={event => event.preventDefault()}
+        href={link.href}
+        
       >
         {link.label}
       </Text>

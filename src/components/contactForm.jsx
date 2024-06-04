@@ -17,6 +17,7 @@ import * as classes from "../styles/GetInTouch.module.css";
 export function GetInTouch() {
   return (
     <MantineProvider defaultColorScheme="light">
+    
       <Container size="lg">
         <Paper shadow="md" radius="lg">
           <div className={classes.wrapper}>
@@ -53,7 +54,7 @@ export function GetInTouch() {
                   mt="md"
                   label="Subject"
                   placeholder="Subject"
-                  
+
                 />
 
                 <Textarea

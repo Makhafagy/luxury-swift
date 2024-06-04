@@ -48,18 +48,19 @@ const SectionDescription = styled.div`
 const AboutUs = () => {
   return (
     <>
-      <SectionHeading>WHO WE ARE</SectionHeading>
-      <SectionDescription>
-        Auto Detail is a small auto detailing business providing the
-        best quality services related to Exterior & Interior.
-      </SectionDescription>
+      <div className="text-5xl text-center uppercase mb-8 md:text-3xl">
+        Why Choose Us
+      </div>
+      <div className="text-lg text-center text-gray-500 mb-12 mx-6 md:mx-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+      </div>
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.8 }}
         className="max-w-screen-lg mx-auto px-12 sm:px-16 lg:px-10">
 
-        <div className="flex flex-wrap -mx-4">
+        <div className="flex flex-wrap">
           <LeftHalf className="w-full md:w-5/12">
             <Title className="flex">
               <div className="text-base/7 p-4">

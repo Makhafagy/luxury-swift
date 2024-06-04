@@ -8,7 +8,7 @@ import { FooterLinks } from "../components/footer"
 import Testimonial from "../components/testimonial"
 import Packages from "../components/pricing"
 import ServiceSection from "../components/services"
-import { GetInTouch } from "../components/contactForm"
+import Contact from "../components/contact"
 import Gallery from "../components/gallery"
 
 const links = [
@@ -37,29 +37,29 @@ const IndexPage = () => {
         <section style={{ marginTop: "63.99px" }}>
           <HeroCarousel />
         </section>
-        <section style={{ marginTop: "100px" }}>
+        <section className="w-11/12 mx-auto">
           <FeaturesAsymmetrical />
         </section>
-        <section id="About" style={{ paddingTop: "10px" }}>
+        <section id="About" style={{ paddingTop: "80px" }}>
           <AboutUs />
         </section>
-        <section style={{ marginTop: "150px" }}>
+        <section id="Stats" style={{ paddingTop: "150px" }}>
           <StatsGroup />
         </section>
         <section id="Packages" style={{ paddingTop: "100px" }}>
           <Packages />
         </section>
-        <section style={{ marginTop: "150px" }}>
+        <section id="Testimonial" style={{ paddingTop: "80px", marginTop:"50px" }}>
           <Testimonial />
         </section>
-        <section id="Service" style={{ paddingTop: "150px" }}>
+        <section id="Service" style={{ paddingTop: "150px", paddingBottom:"100px" }}>
           <ServiceSection />
         </section>
         <section id="Gallery">
           <Gallery/>
         </section>
-        <section style={{ marginTop: "150px", marginBottom: "50px"  }}>
-          <GetInTouch />
+        <section id="Contact" style={{ paddingTop: "100px", paddingBottom: "100px"  }}>
+          <Contact />
         </section>
         <section>
           <FooterLinks />
