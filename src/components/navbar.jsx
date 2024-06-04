@@ -120,7 +120,7 @@ const AppNavBar = ({ window, openModal, links = [] }) => {
                 display: "flex",
               }}
             >
-              <img src={BusinessName1} width={220} alt="logo" />
+              <img src={BusinessName1} width={220} height={100} alt="logo" />
             </a>
           </Typography>
 
