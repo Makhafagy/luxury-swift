@@ -33,13 +33,18 @@ const IndexPage = () => {
       <div className="text-lg text-gray-600 font-pj mb-10 text-center">
         Services
       </div>
-      <div className="sm:container mx-auto p-4 sm:px-14 2xl:px-44 xl:px-24">
+      <div className="relative container mx-auto p-4 sm:px-14 2xl:px-44 xl:px-24">
+        {/* Background Circles */}
+        <div className="absolute top-0 right-10 w-24 h-24 bg-[#f1f1f1] shadow-xl rounded-full transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
+        <div className="absolute top-1/3 right-52 w-24 h-24 bg-[#f1f1f1] shadow-xl rounded-full transform translate-x-1/2 z-0"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-24 h-24 bg-[#f1f1f1] shadow-xl rounded-full transform translate-y-1/2 z-0"></div>
+
         {/* First Row */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.8 }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8"
+          className="z-10 grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8"
         >
           <div className="flex justify-center">
             <StaticImage
@@ -65,10 +70,10 @@ const IndexPage = () => {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.8 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+          className="z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
         >
           {services.map((service, index) => (
-            <div key={index} className="flex flex-col p-4 pt-14">
+            <div key={index} className="z-10 flex flex-col p-4 pt-14">
               <div className="mb-2">
                 <img src={icons[index]} alt={`${service.title} icon`} className="w-12 h-12" />
               </div>
