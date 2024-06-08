@@ -19,6 +19,7 @@ module.exports = {
       options: {
         name: "images",
         path: "./src/images",
+        icon:"./src/images/steering-wheel.png"
       },
       __key: "images",
     },

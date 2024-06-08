@@ -10,13 +10,13 @@ import { motion } from 'framer-motion';
 const StatsGroup = () => {
   return (
     <>
-      <div className="bg-[#228be640] bg-opacity-20 py-28 px-16 bg-[radial-gradient(#00000042_1px,transparent_1px)] [background-size:16px_16px]">
+      <div className="bg-[#228be640] bg-opacity-20 py-28 px-16 bg-[radial-gradient(#0000001d_1px,transparent_1px)] [background-size:16px_16px]">
         <motion.div
-          initial={{ opacity: 0, y: 1 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.8 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y:10 }}
+          viewport={{ once: true, amount:0.5 }}
           className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 xl:w-4/5 2xl:w-3/4 mx-auto">
-          <div className="flex">
+          <div className="flex p-4">
             <IconTrendingUp className=" text-blue-500 w-11 h-11 mr-6" />
             <div className="text-slate-800">
               <CountUp

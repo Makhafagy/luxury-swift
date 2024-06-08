@@ -1,9 +1,9 @@
-import React from 'react'
-import { MantineProvider } from '@mantine/core'
-const Test = () => {
-  return (
-    <MantineProvider></MantineProvider>
-  )
-}
+// import React from 'react'
+// import { MantineProvider } from '@mantine/core'
+// const Test = () => {
+//   return (
+//     <MantineProvider></MantineProvider>
+//   )
+// }
 
-export default Test
+// export default Test

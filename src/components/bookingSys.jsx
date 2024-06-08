@@ -9,17 +9,24 @@ import {
   Col,
   Row,
 } from "antd"
-import moment from "moment"
+
 
 const { Option } = Select
 const { TextArea } = Input
 
-const addon = [{ value: "" }]
 
-const BookingForm = () => {
+
+const BookingForm = ({setSubmittable}) => {
   const [form] = Form.useForm()
   const [service, setService] = useState("")
   const [addressVisible, setAddressVisible] = useState(false)
+  const values = Form.useWatch([], form);
+  React.useEffect(() => {
+    form
+      .validateFields({ validateOnly: true })
+      .then(() => setSubmittable(true))
+      .catch(() => setSubmittable(false));
+  }, [form, values]);
 
   const handleServiceChange = value => {
     setService(value)

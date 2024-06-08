@@ -1,6 +1,6 @@
 import * as React from "react"
 import Navbar from "../components/navbar"
-import HeroCarousel from "../components/hero"
+import HeroCarousel from "../components/heroAnt"
 import { FeaturesAsymmetrical } from "../components/features"
 import AboutUs from "../components/aboutUs"
 import StatsGroup from "../components/stats"
@@ -11,9 +11,39 @@ import ServiceSection from "../components/services"
 import Contact from "../components/contact"
 import Gallery from "../components/gallery"
 
+const data = [
+  {
+    title: "About",
+    links: [
+      { label: "Testimonial", href: "#Testimonial" },
+      { label: "Stats", href: "#Stats" },
+      { label: "FAQ", href: "/info/#FAQ" },
+      { label: "Terms & Conditions", href: "/info" },
+    ],
+  },
+  {
+    title: "Services",
+    links: [
+      { label: "Packages", href: "#Packages" },
+      { label: "Add-ons", href: "#" },
+      { label: "Headlight Restoration", href: "#Services" },
+      { label: "Ceramic Coating", href: "#Services" },
+    ],
+  },
+  {
+    title: "Socials",
+    links: [
+      { label: "Write a review", href: "#" },
+      { label: "Follow on instagram", href: "#" },
+      { label: "Our Facebook page", href: "#" },
+      { label: "Check our Tiktok", href: "#" },
+    ],
+  },
+]
 const links = [
   { label: "About", href: "#About"},
   { label: "Packages", href: "#Packages" },
+  { label: "Testimonial", href: "#Testimonial" },
   { label: "Services", href: "#Service" },
   { label: "Contact", href: "#Contact" },
   { label: "Gallery", href: "#Gallery" },
@@ -34,7 +64,7 @@ const IndexPage = () => {
         <section>
           <Navbar links={links}/>
         </section>
-        <section style={{ marginTop: "63.99px" }}>
+        <section style={{ marginTop: "80px" }}>
           <HeroCarousel />
         </section>
         <section className="w-11/12 mx-auto">
@@ -62,7 +92,7 @@ const IndexPage = () => {
           <Contact />
         </section>
         <section>
-          <FooterLinks />
+          <FooterLinks footerLinks={data} />
         </section>
       </body>
     </>

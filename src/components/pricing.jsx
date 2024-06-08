@@ -1,29 +1,15 @@
 import React from "react"
-import { Button } from "@mui/material"
-import { TawkContext } from "../providers"
-import styled from "@emotion/styled"
+import ModalIndex from "./modal"
 
-const BookButtonStyle = styled(Button)`
-  color: #000000;
-  margin-left: 16px;
-  background-color: #e9e8e8;
-  white-space: nowrap;
-  width: 75%;
-  transition: 0.2s;
-  &:hover {
-    background: #bbbbbb;
-  }
-`
 
 
 const Packages = () => {
-  const { tawkMessenger } = React.useContext(TawkContext)
   return (
     <>
       <div className="text-center text-lg text-gray-600 font-pj capitalize mb-12 md:mb-5">
         Pricing
       </div>
-      <div className="text-5xl text-center uppercase mb-8 md:text-3xl">
+      <div className="text-3xl text-center uppercase mb-8 lg:text-5xl">
         our packages
       </div>
       <div className="text-lg text-center text-gray-500 mb-12 mx-6 md:mx-3">
@@ -65,14 +51,7 @@ const Packages = () => {
               <ItemArrayX text={["Odor Removal"]} />
 
               <div className="text-center py-4">
-                <BookButtonStyle
-                  onClick={() => {
-                    tawkMessenger.toggle()
-                  }}
-                  variant="contained"
-                >
-                  Book Now
-                </BookButtonStyle>
+                <ModalIndex/>
               </div>
               <div className="text-center text-base text-gray-500">
                 XL SUVs $145 & Vans/Trucks $155
@@ -114,14 +93,7 @@ const Packages = () => {
               <ItemArrayBX text={["Premium Ceramic Wax"]} />
               <ItemArrayBX text={["Odor Removal"]} />
               <div className="text-center py-4">
-                <BookButtonStyle
-                  onClick={() => {
-                    tawkMessenger.toggle()
-                  }}
-                  variant="contained"
-                >
-                  Book Now
-                </BookButtonStyle>
+              <ModalIndex/>
               </div>
               <div className="text-center text-base text-gray-300">
                 XL SUVs $190 & Vans/Trucks $200
@@ -160,14 +132,7 @@ const Packages = () => {
               <ItemArray text={["Premium Ceramic Wax"]} />
               <ItemArray text={["Odor Removal"]} />
               <div className="text-center py-4">
-                <BookButtonStyle
-                  onClick={() => {
-                    tawkMessenger.toggle()
-                  }}
-                  variant="contained"
-                >
-                  Book Now
-                </BookButtonStyle>
+              <ModalIndex/>
               </div>
               <div className="text-center text-base text-gray-500">
                 XL SUVs $280 & Vans/Trucks $290

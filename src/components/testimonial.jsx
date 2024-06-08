@@ -1,5 +1,5 @@
 import React from "react";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 const Testimonial = () => {
   return (
     <section className="py-12 bg-[#bdbdbd] bg-opacity-20 sm:py-16 lg:py-20 bg-[radial-gradient(#00000029_1px,transparent_1px)] [background-size:16px_16px]">
@@ -19,16 +19,16 @@ const Testimonial = () => {
               Write a Review
             </a>
           </div>
-
-          <div className="relative mt-10 md:mt-24 md:order-2">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y:10 }}
+            viewport={{ once: true, amount:0.3 }}
+            className="relative mt-10 md:mt-24 md:order-2">
             <div className="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
               <div className="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter"></div>
             </div>
-          <motion.div
-          initial={{ opacity: 0, y: 1 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.8 }}
-          className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
+
+            <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="flex flex-col overflow-hidden shadow-xl">
                   <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
@@ -66,8 +66,8 @@ const Testimonial = () => {
                   </div>
                 </div>
               ))}
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

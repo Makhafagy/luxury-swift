@@ -16,38 +16,10 @@ import {
 import BusinessLogo from "../images/footer-logo.png"
 import * as classes from "../styles/FooterLinks.module.css"
 import React from "react"
-const data = [
-  {
-    title: "About",
-    links: [
-      { label: "Testimonial", href: "#Testimonial" },
-      { label: "Stats", href: "#Stats" },
-      { label: "FAQ", href: "/info/#FAQ" },
-      { label: "Terms & Conditions", href: "/info" },
-    ],
-  },
-  {
-    title: "Services",
-    links: [
-      { label: "Packages", href: "#Packages" },
-      { label: "Add-ons", href: "#" },
-      { label: "Headlight Restoration", href: "#Services" },
-      { label: "Ceramic Coating", href: "#Services" },
-    ],
-  },
-  {
-    title: "Socials",
-    links: [
-      { label: "Write a review", href: "#" },
-      { label: "Follow on instagram", href: "#" },
-      { label: "Our Facebook page", href: "#" },
-      { label: "Check our Tiktok", href: "#" },
-    ],
-  },
-]
 
-export function FooterLinks() {
-  const groups = data.map(group => {
+
+export function FooterLinks({footerLinks = []}) {
+  const groups = footerLinks.map(group => {
     const links = group.links.map((link, index) => (
       <Text
         key={index}
@@ -100,31 +72,31 @@ export function FooterLinks() {
           >
             <ActionIcon size="lg" color="dark" variant="subtle">
               <IconBrandTiktok
-                style={{ width: rem(18), height: rem(18) }}
+                style={{ width: rem(20), height: rem(20) }}
                 stroke={1.5}
               />
             </ActionIcon>
             <ActionIcon size="lg" color="dark" variant="subtle">
               <IconBrandFacebook
-                style={{ width: rem(18), height: rem(18) }}
+                style={{ width: rem(20), height: rem(20) }}
                 stroke={1.5}
               />
             </ActionIcon>
             <ActionIcon size="lg" color="dark" variant="subtle">
               <IconBrandInstagram
-                style={{ width: rem(18), height: rem(18) }}
+                style={{ width: rem(20), height: rem(20) }}
                 stroke={1.5}
               />
             </ActionIcon>
             <ActionIcon size="lg" color="dark" variant="subtle">
               <IconBrandGoogle
-                style={{ width: rem(18), height: rem(18) }}
+                style={{ width: rem(20), height: rem(20) }}
                 stroke={1.5}
               />
             </ActionIcon>
             <ActionIcon size="lg" color="dark" variant="subtle">
               <IconMap2
-                style={{ width: rem(18), height: rem(18) }}
+                style={{ width: rem(20), height: rem(20) }}
                 stroke={1.5}
               />
             </ActionIcon>

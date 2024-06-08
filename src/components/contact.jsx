@@ -4,10 +4,7 @@ const Contact = () => {
     return (
         <>
             <div className="relative container mx-auto sm:px-0 w-11/12 lg:w-5/6 xl:w-3/4 2xl:w-3/5 mb-20">
-                {/* Background Circles */}
-                <div className="absolute top-0 left-0 w-24 h-24 bg-gray-100 shadow-xl rounded-full transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
-                <div className="absolute top-1/3 right-0 w-24 h-24 bg-gray-100 shadow-xl rounded-full transform translate-x-1/2 z-0"></div>
-                <div className="absolute bottom-0 left-1/3 w-24 h-24 bg-gray-100 shadow-xl rounded-full transform translate-y-1/2 z-0"></div>
+                
 
                 <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Left Side */}

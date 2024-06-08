@@ -5,6 +5,7 @@ import Icon2 from '../images/car.png';
 import Icon3 from '../images/car-wash.png';
 import Icon4 from '../images/ceramic-coating.png';
 import { motion } from 'framer-motion';
+import ModalIndex from './modal';
 
 const IndexPage = () => {
   const services = [
@@ -34,16 +35,13 @@ const IndexPage = () => {
         Services
       </div>
       <div className="relative container mx-auto p-4 sm:px-14 2xl:px-44 xl:px-24">
-        {/* Background Circles */}
-        <div className="absolute top-0 right-10 w-24 h-24 bg-[#f1f1f1] shadow-xl rounded-full transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
-        <div className="absolute top-1/3 right-52 w-24 h-24 bg-[#f1f1f1] shadow-xl rounded-full transform translate-x-1/2 z-0"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-24 h-24 bg-[#f1f1f1] shadow-xl rounded-full transform translate-y-1/2 z-0"></div>
+        
 
         {/* First Row */}
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y:10 }}
+          viewport={{ once: true, amount:0.3 }}
           className="z-10 grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8"
         >
           <div className="flex justify-center">
@@ -59,17 +57,15 @@ const IndexPage = () => {
             <p className="text-lg mb-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam, Sed cursus ante dapibus diam.
             </p>
-            <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 w-1/3">
-              Learn More
-            </button>
+            <ModalIndex/>
           </div>
 
         </motion.div>
         {/* Second Row */}
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.8 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y:10 }}
+          viewport={{ once: true, amount:0.4 }}
           className="z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
         >
           {services.map((service, index) => (

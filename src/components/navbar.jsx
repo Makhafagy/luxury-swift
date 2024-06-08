@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar"
 import Toolbar from "@mui/material/Toolbar"
 import Typography from "@mui/material/Typography"
 import styled from "@emotion/styled"
-import { Button } from "@mui/material"
 import Box from "@mui/material/Box"
 import Drawer from "@mui/material/Drawer"
 import Divider from "@mui/material/Divider"
@@ -13,9 +12,8 @@ import ListItemButton from "@mui/material/ListItemButton"
 import ListItemText from "@mui/material/ListItemText"
 import IconButton from "@mui/material/IconButton"
 import MenuIcon from "@mui/icons-material/Menu"
-import { TawkContext } from "../providers"
 import BusinessName1 from "../images/nav-logo.png"
-// import BusinessName from "../images/footer-logo.png"
+import ModalIndex from "./modal"
 
 
 
@@ -60,28 +58,17 @@ const LinksStyle = styled.a`
     background-color: #228be6; 
   }
 `
-const BookButtonStyle = styled(Button)`
-  color: #000000;
-  margin-left: 16px;
-  background: #228be6;
-  white-space: nowrap;
-  transition: 0.2s;
-  &:hover {
-    background: #3ca4ff;
-  }
-`
 const drawerWidth = 240
 
-const AppNavBar = ({ window, openModal, links = [] }) => {
-  const { tawkMessenger } = React.useContext(TawkContext)
+const AppNavBar = ({ window, links = [] }) => {
   const [mobileOpen, setMobileOpen] = React.useState(false)
   const handleDrawerToggle = () => {
     setMobileOpen(prevState => !prevState)
   }
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h5" sx={{ my: 2}}>
-      Auto Detail
+      <Typography variant="h5" sx={{ my: 2 }}>
+        Auto Detail
       </Typography>
       <Divider />
       <List>
@@ -107,20 +94,13 @@ const AppNavBar = ({ window, openModal, links = [] }) => {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, color: "white", display: { md: "none" } }}
+            sx={{ mr: 1, color: "white", display: { md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div">
-            <a
-              href="/"
-              style={{
-                color: "white",
-                textDecoration: "none",
-                display: "flex",
-              }}
-            >
-              <img src={BusinessName1} width={220} height={100} alt="logo" />
+            <a href="/">
+              <img src={BusinessName1} className="w-36 sm:w-56" alt="logo" />
             </a>
           </Typography>
 
@@ -132,30 +112,21 @@ const AppNavBar = ({ window, openModal, links = [] }) => {
             }}
             style={{ marginLeft: "auto" }}
           >
-            {links.map((v,i) => (
+            {links.map((v, i) => (
               <LinksStyle disabled={v.disabled} key={i} href={v.href}>{v.label}</LinksStyle>
             ))}
-            <BookButtonStyle
-              onClick={() => {
-                tawkMessenger.toggle()
-              }}
-              variant="contained"
-            >
-              Book Now
-            </BookButtonStyle>
+            <span className="ms-4">
+              <ModalIndex />
+            </span>
+
           </Box>
           <Box
             sx={{ mr: 2, display: { md: "none" } }}
             style={{ marginLeft: "auto" }}
           >
-            <BookButtonStyle
-              onClick={() => {
-                tawkMessenger.toggle()
-              }}
-              variant="contained"
-            >
-              Book Now
-            </BookButtonStyle>
+            <span className="ms-4">
+              <ModalIndex />
+            </span>
           </Box>
         </Toolbar>
       </AppBarStyle>
