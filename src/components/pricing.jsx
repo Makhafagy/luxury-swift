@@ -1,7 +1,7 @@
 import React from "react"
 import ModalIndex from "./modal"
 
-
+import { motion } from 'framer-motion'
 
 const Packages = () => {
   return (
@@ -18,7 +18,7 @@ const Packages = () => {
 
       <div className="sm:container mx-auto 2xl:px-32">
         <div className="flex flex-wrap">
-          <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-1 mb-6">
+          <div className="w-11/12 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-1 mb-6">
             <div className="relative p-10 rounded-lg border border-slate-400 shadow-md bg-white">
               <div className="text-xl font-medium py-2 flex items-center">
                 <i className="mr-2 bi bi-circle-half " />
@@ -51,14 +51,14 @@ const Packages = () => {
               <ItemArrayX text={["Odor Removal"]} />
 
               <div className="text-center py-4">
-                <ModalIndex/>
+                <ModalIndex />
               </div>
               <div className="text-center text-base text-gray-500">
                 XL SUVs $145 & Vans/Trucks $155
               </div>
             </div>
           </div>
-          <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-1 mb-6">
+          <div className="w-11/12 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-1 mb-6">
             <div className="relative p-10 rounded-lg border shadow-md bg-zinc-900 text-gray-200">
               <div className="absolute top-0 right-0 mt-0 mr-7 px-4 py-2 bg-[#e9e8e8] text-black font-semibold rounded-b-lg">
                 Best Deal
@@ -93,14 +93,14 @@ const Packages = () => {
               <ItemArrayBX text={["Premium Ceramic Wax"]} />
               <ItemArrayBX text={["Odor Removal"]} />
               <div className="text-center py-4">
-              <ModalIndex/>
+                <ModalIndex />
               </div>
               <div className="text-center text-base text-gray-300">
                 XL SUVs $190 & Vans/Trucks $200
               </div>
             </div>
           </div>
-          <div className="w-6/7 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-1 mb-6">
+          <div className="w-11/12 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-1 mb-6">
             <div className="relative p-10 rounded-lg border border-slate-400 shadow-md bg-white">
               <div className="text-xl font-medium py-2 flex items-center">
                 <i className="mr-2 bi bi-circle-half" />
@@ -132,7 +132,7 @@ const Packages = () => {
               <ItemArray text={["Premium Ceramic Wax"]} />
               <ItemArray text={["Odor Removal"]} />
               <div className="text-center py-4">
-              <ModalIndex/>
+                <ModalIndex />
               </div>
               <div className="text-center text-base text-gray-500">
                 XL SUVs $280 & Vans/Trucks $290
@@ -203,10 +203,13 @@ const ItemArray = ({ text }) => {
     <>
       {Array.isArray(text) &&
         text.map((v, i) => (
-          <div key={i} className="flex items-start pb-2 capitalize">
+          <motion.div initial={{ opacity: 0, x:-30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ duration: 0.3 }} key={i} className="flex items-center pb-2 capitalize">
             <i className="text-lg mr-4 bi bi-bookmark-check-fill" />
             {v}
-          </div>
+          </motion.div>
         ))}
     </>
   )
@@ -217,13 +220,17 @@ const ItemArrayX = ({ text }) => {
     <>
       {Array.isArray(text) &&
         text.map((v, i) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.8 }}
+            transition={{ duration: 0.3 }}
             key={i}
-            className="flex items-start pb-2 line-through text-gray-400 capitalize"
+            className="flex items-center pb-2 line-through text-gray-400 capitalize"
           >
             <i className="text-lg mr-4 bi bi-bookmark-x-fill" />
             {v}
-          </div>
+          </motion.div>
         ))}
     </>
   )
@@ -234,10 +241,13 @@ const ItemArrayB = ({ text }) => {
     <>
       {Array.isArray(text) &&
         text.map((v, i) => (
-          <div key={i} className="flex items-start pb-2 text-gray-200 capitalize">
+          <motion.div initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.8 }}
+            transition={{ duration: 0.3 }} key={i} className="flex items-center pb-2 text-gray-200 capitalize">
             <i className="text-lg mr-4 bi bi-bookmark-check-fill" />
             {v}
-          </div>
+          </motion.div>
         ))}
     </>
   )
@@ -248,13 +258,16 @@ const ItemArrayBX = ({ text }) => {
     <>
       {Array.isArray(text) &&
         text.map((v, i) => (
-          <div
+          <motion.div initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.8 }}
+            transition={{ duration: 0.3 }}
             key={i}
-            className="flex items-start pb-2 line-through text-gray-500 capitalize"
+            className="flex items-center pb-2 line-through text-gray-500 capitalize"
           >
             <i className="text-lg mr-4 bi bi-bookmark-x-fill" />
             {v}
-          </div>
+          </motion.div>
         ))}
     </>
   )

@@ -11,7 +11,7 @@ const Contact = () => {
                     <div className="flex flex-col justify-between">
                         <div className='mb-8'>
                             <h1 className="text-4xl font-bold mb-2 font-sans">Contact Us</h1>
-                            <p className="text-gray-500 font-sans text-lg">We'd love to hear from you! Please fill out the form on the right to get in touch with us.</p>
+                            <p className="text-gray-500 font-sans text-lg">We'd love to hear from you! Please fill out the form to get in touch with us.</p>
                         </div>
                         <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 self-end">
                             <div className="p-4">

@@ -25,9 +25,10 @@ const SectionTitles = styled.div`
 function Feature({ icon: Icon, title, description, className, ...others }) {
   return (
     <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1, y:10 }}
+    initial={{ opacity: 0, x:-40 }}
+    whileInView={{ opacity: 1, x:0 }}
     viewport={{ once: true, amount:0.9 }}
+    transition={{duration:0.3}}
       className={classes.feature}
       {...others}
     >

@@ -5100,6 +5100,7 @@ __metadata:
     "@tawk.to/tawk-messenger-react": "npm:^2.0.2"
     antd: "npm:^5.17.3"
     autoprefixer: "npm:^10.4.19"
+    bootstrap-icons: "npm:^1.11.3"
     flowbite: "npm:^2.3.0"
     flowbite-react: "npm:^0.9.0"
     framer-motion: "npm:^11.2.6"
@@ -5520,6 +5521,13 @@ __metadata:
   version: 1.0.0
   resolution: "boolbase@npm:1.0.0"
   checksum: 10c0/e4b53deb4f2b85c52be0e21a273f2045c7b6a6ea002b0e139c744cb6f95e9ec044439a52883b0d74dedd1ff3da55ed140cfdddfed7fb0cccbed373de5dce1bcf
+  languageName: node
+  linkType: hard
+
+"bootstrap-icons@npm:^1.11.3":
+  version: 1.11.3
+  resolution: "bootstrap-icons@npm:1.11.3"
+  checksum: 10c0/37eefd418c6bbbb304bdff0f2ed527f82c3c6f331d3e3a7c4aa8bbdbaf7118bb86725b024f85e7d738c613d48c7353cd81c09e58e9d8d34c5633960fdec8410b
   languageName: node
   linkType: hard
 

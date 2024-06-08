@@ -42,11 +42,11 @@ const data = [
 ]
 const links = [
   { label: "About", href: "#About"},
-  { label: "Packages", href: "#Packages" },
+  { label: "Pricing", href: "#Packages" },
   { label: "Testimonial", href: "#Testimonial" },
   { label: "Services", href: "#Service" },
-  { label: "Contact", href: "#Contact" },
   { label: "Gallery", href: "#Gallery" },
+  { label: "Contact", href: "#Contact" },
 ]
 
 
@@ -82,10 +82,10 @@ const IndexPage = () => {
         <section id="Testimonial" style={{ paddingTop: "80px", marginTop:"50px" }}>
           <Testimonial />
         </section>
-        <section id="Service" style={{ paddingTop: "150px", paddingBottom:"100px" }}>
+        <section id="Service" style={{ paddingTop: "150px", paddingBottom:"60px" }}>
           <ServiceSection />
         </section>
-        <section id="Gallery">
+        <section id="Gallery" style={{ paddingTop: "40px"}}>
           <Gallery/>
         </section>
         <section id="Contact" style={{ paddingTop: "100px", paddingBottom: "100px"  }}>

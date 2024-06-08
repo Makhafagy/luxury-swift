@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion"
 const Testimonial = () => {
   return (
-    <section className="py-12 bg-[#bdbdbd] bg-opacity-20 sm:py-16 lg:py-20 bg-[radial-gradient(#00000029_1px,transparent_1px)] [background-size:16px_16px]">
+    <section className="py-12 bg-[#bdbdbd] bg-opacity-20 sm:py-16 lg:py-20 bg-[radial-gradient(#0000001a_1px,transparent_1px)] [background-size:8px_8px]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
           <div className="text-center">
@@ -19,18 +19,17 @@ const Testimonial = () => {
               Write a Review
             </a>
           </div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, y:10 }}
-            viewport={{ once: true, amount:0.3 }}
-            className="relative mt-10 md:mt-24 md:order-2">
+          <div className="relative mt-10 md:mt-24 md:order-2">
             <div className="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
               <div className="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter"></div>
             </div>
 
             <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
               {testimonials.map((testimonial, index) => (
-                <div key={index} className="flex flex-col overflow-hidden shadow-xl">
+                <motion.div initial={{ opacity: 0, y:40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 0.3 }} key={index} className="flex flex-col overflow-hidden shadow-xl">
                   <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                     <div className="flex-1">
                       <div className="flex items-center">
@@ -64,10 +63,10 @@ const Testimonial = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import AppBar from "@mui/material/AppBar"
 import Toolbar from "@mui/material/Toolbar"
 import Typography from "@mui/material/Typography"
@@ -16,7 +16,6 @@ import BusinessName1 from "../images/nav-logo.png"
 import ModalIndex from "./modal"
 
 
-
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
   transition: 0.2s;
@@ -29,8 +28,9 @@ const ListItemButtonStyle = styled(ListItemButton)`
 
 const AppBarStyle = styled(AppBar)`
   height: 80px;
-  background: #242424;
+  background: #181818;
   position: fixed;
+  align-self: center;
   /* border-top: 1px solid #242424; */
 `
 
@@ -61,10 +61,12 @@ const LinksStyle = styled.a`
 const drawerWidth = 240
 
 const AppNavBar = ({ window, links = [] }) => {
-  const [mobileOpen, setMobileOpen] = React.useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () => {
     setMobileOpen(prevState => !prevState)
   }
+
+
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h5" sx={{ my: 2 }}>
@@ -88,6 +90,7 @@ const AppNavBar = ({ window, links = [] }) => {
 
   return (
     <Box sx={{ display: "flex" }}>
+      
       <AppBarStyle>
         <Toolbar sx={{ marginTop: "auto", marginBottom: "auto" }}>
           <IconButton
@@ -130,6 +133,7 @@ const AppNavBar = ({ window, links = [] }) => {
           </Box>
         </Toolbar>
       </AppBarStyle>
+      
       <nav>
         <Drawer
           container={container}

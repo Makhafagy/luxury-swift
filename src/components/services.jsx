@@ -35,13 +35,14 @@ const IndexPage = () => {
         Services
       </div>
       <div className="relative container mx-auto p-4 sm:px-14 2xl:px-44 xl:px-24">
-        
+
 
         {/* First Row */}
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, y:10 }}
-          viewport={{ once: true, amount:0.3 }}
+          initial={{ opacity: 0, y:-10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.3 }}
           className="z-10 grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8"
         >
           <div className="flex justify-center">
@@ -57,19 +58,19 @@ const IndexPage = () => {
             <p className="text-lg mb-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam, Sed cursus ante dapibus diam.
             </p>
-            <ModalIndex/>
+            <ModalIndex />
           </div>
 
         </motion.div>
         {/* Second Row */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, y:10 }}
-          viewport={{ once: true, amount:0.4 }}
+        <div
           className="z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
         >
           {services.map((service, index) => (
-            <div key={index} className="z-10 flex flex-col p-4 pt-14">
+            <motion.div initial={{ opacity: 0, x:60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.8 }}
+              transition={{ duration: 0.3 }} key={index} className="z-10 flex flex-col p-4 pt-14">
               <div className="mb-2">
                 <img src={icons[index]} alt={`${service.title} icon`} className="w-12 h-12" />
               </div>
@@ -77,9 +78,9 @@ const IndexPage = () => {
               <p className="">
                 {service.description}
               </p>
-            </div>
+            </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </>
   );

@@ -10,7 +10,7 @@ class Gallery extends Component {
         const after2 = require("../images/after10.jpg").default;
         return (
             <>
-                <div className="py-12 bg-[#bdbdbd] bg-opacity-20 sm:py-16 lg:py-20 bg-[radial-gradient(#00000029_1px,transparent_1px)] [background-size:16px_16px]">
+                <div className="py-12 bg-[#bdbdbd] bg-opacity-20 sm:py-16 lg:py-20 bg-[radial-gradient(#0000001a_1px,transparent_1px)] [background-size:8px_8px]">
                     <div className="text-center text-lg font-medium text-gray-600 pb-6 font-pj">
                         Gallery
                     </div>

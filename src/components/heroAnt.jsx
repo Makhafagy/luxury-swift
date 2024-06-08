@@ -10,7 +10,7 @@ const carouselItems = [
         image: Carousel1,
         heading: "Washing & Detailing",
         subheading: "Keep your Car Newer",
-        text: "Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac",
+        text: "Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris.",
         buttonText: "Explore More",
         buttonLink: "#About",
     },
@@ -18,7 +18,7 @@ const carouselItems = [
         image: Carousel2,
         heading: "Washing & Detailing",
         subheading: "Quality service for you",
-        text: "Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna. Morbi sagittis orci sodales",
+        text: "Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna.",
         buttonText: "Explore Services",
         buttonLink: "#Service",
     },
@@ -26,7 +26,7 @@ const carouselItems = [
         image: Carousel3,
         heading: "Washing & Detailing",
         subheading: "Exterior & Interior Washing",
-        text: "Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor, ut rhoncus nibh ligula euismod quam",
+        text: "Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor.",
         buttonText: "Explore Packages",
         buttonLink: "#Packages",
     },
@@ -39,7 +39,7 @@ const HeroCarousel = () => {
                 Carousel: {
                     
                     arrowSize: 23,
-                    arrowOffset: 25,
+                    arrowOffset: 15,
                     dotActiveWidth: 33,
                     dotHeight: 5,
 

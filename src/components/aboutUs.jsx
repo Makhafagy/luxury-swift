@@ -55,10 +55,11 @@ const AboutUs = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
       </div>
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, y:10 }}
+        initial={{ opacity: 0, y:-10 }}
+        whileInView={{ opacity: 1, y:0 }}
         viewport={{ once: true, amount:0.3 }}
-        className="max-w-screen-lg mx-auto px-12 sm:px-16 lg:px-10">
+        transition={{duration:0.3}}
+        className="max-w-screen-lg mx-auto px-6 sm:px-16 lg:px-10">
 
         <div className="flex flex-wrap">
           <LeftHalf className="w-full md:w-5/12">
