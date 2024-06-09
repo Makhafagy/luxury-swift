@@ -10,7 +10,7 @@ import Packages from "../components/pricing"
 import ServiceSection from "../components/services"
 import Contact from "../components/contact"
 import Gallery from "../components/gallery"
-
+import ScrollArrow from '../components/scrollUpBtn'
 const data = [
   {
     title: "About",
@@ -93,6 +93,9 @@ const IndexPage = () => {
         </section>
         <section>
           <FooterLinks footerLinks={data} />
+        </section>
+        <section>
+        <ScrollArrow/>
         </section>
       </body>
     </>
