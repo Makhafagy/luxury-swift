@@ -12,7 +12,7 @@ import ListItemButton from "@mui/material/ListItemButton"
 import ListItemText from "@mui/material/ListItemText"
 import IconButton from "@mui/material/IconButton"
 import MenuIcon from "@mui/icons-material/Menu"
-import BusinessName1 from "../images/nav-logo.png"
+import BusinessName1 from "../images/nav-logo.webp"
 import ModalIndex from "./modal"
 
 
@@ -103,7 +103,7 @@ const AppNavBar = ({ window, links = [] }) => {
           </IconButton>
           <Typography variant="h6" component="div">
             <a href="/">
-              <img src={BusinessName1} className="w-36 sm:w-56" alt="logo" />
+              <img loading="lazy" src={BusinessName1} className="w-36 sm:w-56" alt="logo" />
             </a>
           </Typography>
 

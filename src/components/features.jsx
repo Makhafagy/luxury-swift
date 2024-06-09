@@ -27,7 +27,7 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
     <motion.div
     initial={{ opacity: 0, x:-40 }}
     whileInView={{ opacity: 1, x:0 }}
-    viewport={{ once: true, amount:0.9 }}
+    viewport={{ once: true, amount:0.7 }}
     transition={{duration:0.3}}
       className={classes.feature}
       {...others}
@@ -83,7 +83,7 @@ export function FeaturesAsymmetrical() {
       <SectionTitles className="text-center text-uppercase">
         Welcome
       </SectionTitles>
-      <MantineProvider>
+      <MantineProvider defaultColorScheme="light">
         <Container mt={30} mb={30} size="md">
           <SimpleGrid cols={{ base: 1, sm: 3 }} spacing={50}>
             {items}

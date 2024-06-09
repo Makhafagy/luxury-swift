@@ -53,6 +53,7 @@ const Testimonial = () => {
 
                     <div className="flex items-center mt-8">
                       <img
+                        loading="lazy"
                         className="flex-shrink-0 object-cover rounded-full w-11 h-11"
                         src={testimonial.image}
                         alt=""

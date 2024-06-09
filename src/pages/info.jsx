@@ -36,7 +36,7 @@ const data = [
 const links = [
   { label: "Home", href: "/" },
   { label: "Contact", href: "/#Contact" },
-  { label: "Write a Review", href: "" },
+  { label: "Write a Review", href: "#" },
 ]
 
 const InfoPage = () => {

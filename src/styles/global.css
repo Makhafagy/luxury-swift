@@ -25,7 +25,7 @@ html {
 /* About Us */
 .carpic {
   position: relative;
-  background: url("../images/Aboutus_image3.png");
+  background: url("../images/Aboutus_image3.webp");
   min-height: 410px;
   background-size: cover;
   background-repeat: no-repeat;

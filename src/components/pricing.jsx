@@ -205,7 +205,7 @@ const ItemArray = ({ text }) => {
         text.map((v, i) => (
           <motion.div initial={{ opacity: 0, x:-30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.3 }} key={i} className="flex items-center pb-2 capitalize">
             <i className="text-lg mr-4 bi bi-bookmark-check-fill" />
             {v}
@@ -223,7 +223,7 @@ const ItemArrayX = ({ text }) => {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.3 }}
             key={i}
             className="flex items-center pb-2 line-through text-gray-400 capitalize"
@@ -243,7 +243,7 @@ const ItemArrayB = ({ text }) => {
         text.map((v, i) => (
           <motion.div initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.3 }} key={i} className="flex items-center pb-2 text-gray-200 capitalize">
             <i className="text-lg mr-4 bi bi-bookmark-check-fill" />
             {v}
@@ -260,7 +260,7 @@ const ItemArrayBX = ({ text }) => {
         text.map((v, i) => (
           <motion.div initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.3 }}
             key={i}
             className="flex items-center pb-2 line-through text-gray-500 capitalize"

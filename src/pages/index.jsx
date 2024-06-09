@@ -44,7 +44,7 @@ const links = [
   { label: "About", href: "#About"},
   { label: "Pricing", href: "#Packages" },
   { label: "Testimonial", href: "#Testimonial" },
-  { label: "Services", href: "#Service" },
+  { label: "Services", href: "#Services" },
   { label: "Gallery", href: "#Gallery" },
   { label: "Contact", href: "#Contact" },
 ]
@@ -64,31 +64,31 @@ const IndexPage = () => {
         <section>
           <Navbar links={links}/>
         </section>
-        <section style={{ marginTop: "80px" }}>
+        <section style={{ marginTop: "80px", overflowX:"hidden" }}>
           <HeroCarousel />
         </section>
-        <section className="w-11/12 mx-auto">
+        <section className="w-11/12 mx-auto overflow-x-hidden">
           <FeaturesAsymmetrical />
         </section>
-        <section id="About" style={{ paddingTop: "80px" }}>
+        <section id="About" style={{ paddingTop: "80px", overflowX:"hidden" }}>
           <AboutUs />
         </section>
-        <section id="Stats" style={{ paddingTop: "150px" }}>
+        <section id="Stats" style={{ paddingTop: "150px", overflowX:"hidden" }}>
           <StatsGroup />
         </section>
-        <section id="Packages" style={{ paddingTop: "100px" }}>
+        <section id="Packages" style={{ paddingTop: "100px", overflowX:"hidden" }}>
           <Packages />
         </section>
-        <section id="Testimonial" style={{ paddingTop: "80px", marginTop:"50px" }}>
+        <section id="Testimonial" style={{ paddingTop: "80px", marginTop:"50px", overflowX:"hidden" }}>
           <Testimonial />
         </section>
-        <section id="Service" style={{ paddingTop: "150px", paddingBottom:"60px" }}>
+        <section id="Services" style={{ paddingTop: "150px", paddingBottom:"60px", overflowX:"hidden"}}>
           <ServiceSection />
         </section>
-        <section id="Gallery" style={{ paddingTop: "40px"}}>
+        <section id="Gallery" style={{ paddingTop: "40px", overflowX:"hidden"}}>
           <Gallery/>
         </section>
-        <section id="Contact" style={{ paddingTop: "100px", paddingBottom: "100px"  }}>
+        <section id="Contact" style={{ paddingTop: "100px", paddingBottom: "100px", overflowX:"hidden"  }}>
           <Contact />
         </section>
         <section>

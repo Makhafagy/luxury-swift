@@ -1,9 +1,9 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import Icon1 from '../images/headlight.png';
-import Icon2 from '../images/car.png';
-import Icon3 from '../images/car-wash.png';
-import Icon4 from '../images/ceramic-coating.png';
+import Icon1 from '../images/headlight.webp';
+import Icon2 from '../images/car.webp';
+import Icon3 from '../images/car-wash.webp';
+import Icon4 from '../images/ceramic-coating.webp';
 import { motion } from 'framer-motion';
 import ModalIndex from './modal';
 
@@ -34,7 +34,7 @@ const IndexPage = () => {
       <div className="text-lg text-gray-600 font-pj mb-10 text-center">
         Services
       </div>
-      <div className="relative container mx-auto p-4 sm:px-14 2xl:px-44 xl:px-24">
+      <div className="relative container mx-auto w-11/12 xl:w-9/12">
 
 
         {/* First Row */}
@@ -47,7 +47,7 @@ const IndexPage = () => {
         >
           <div className="flex justify-center">
             <StaticImage
-              src='../images/service-pic.jpg'
+              src='../images/service-pic.webp'
               alt="Service"
               className="w-auto h-auto lg:max-w-96"
             />
@@ -72,7 +72,7 @@ const IndexPage = () => {
               viewport={{ once: true, amount: 0.8 }}
               transition={{ duration: 0.3 }} key={index} className="z-10 flex flex-col p-4 pt-14">
               <div className="mb-2">
-                <img src={icons[index]} alt={`${service.title} icon`} className="w-12 h-12" />
+                <img loading="lazy" src={icons[index]} alt={`${service.title} icon`} className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="">
