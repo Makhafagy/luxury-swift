@@ -14,7 +14,7 @@ const StatsGroup = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 xl:w-5/6 2xl:w-3/4 mx-auto gap-6 xl:gap-14">
           <motion.div initial={{ opacity: 0, x:-40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.9 }}
+          viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.3 }} className="flex p-4">
             <IconTrendingUp className=" text-blue-500 w-11 h-11 mr-6" />
             <div className="text-slate-800">
@@ -31,7 +31,7 @@ const StatsGroup = () => {
           </motion.div>
           <motion.div initial={{ opacity: 0, x:40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.9 }}
+          viewport={{ once: true, amount: 0.7 }}
           transition={{ duration: 0.3 }} className="flex p-4">
             <IconMoodHeart className="w-11 h-11 mr-6  text-blue-500" />
             <div className="text-slate-800">
@@ -65,7 +65,7 @@ const StatsGroup = () => {
           </motion.div>
           <motion.div initial={{ opacity: 0, x:40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.9 }}
+          viewport={{ once: true, amount: 1 }}
           transition={{ duration: 0.3 }} className="flex p-4">
             <IconRepeat className="w-11 h-11 mr-6 text-blue-500" />
             <div className="text-slate-800">

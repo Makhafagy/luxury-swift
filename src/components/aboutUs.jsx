@@ -57,7 +57,7 @@ const AboutUs = () => {
       <motion.div
         initial={{ opacity: 0, y:-10 }}
         whileInView={{ opacity: 1, y:0 }}
-        viewport={{ once: true, amount:0.5 }}
+        viewport={{ once: true, amount:0.7 }}
         transition={{duration:0.3}}
         className="max-w-screen-lg mx-auto w-11/12 sm:w-10/12 lg:w-9/12 xl:w-8/12">
 
