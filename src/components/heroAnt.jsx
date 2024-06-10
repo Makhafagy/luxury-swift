@@ -49,9 +49,9 @@ const HeroCarousel = () => {
                 },
             },
         }}>
-            <motion.div initial={{ opacity: 0, y: -40 }}
+            <motion.div initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.4 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.3, delay:0.3 }} className="relative w-full mb-12">
                 <Carousel
                     className="p-0 mx-auto w-[95%] lg:w-11/12 xl:w-10/12 2xl:w-9/12 lg:mt-12 sm:mt-7 mt-4"
