@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState} from "react"
 import {
   Form,
   Input,
@@ -16,7 +16,7 @@ const { TextArea } = Input
 
 
 
-const BookingForm = ({setSubmittable}) => {
+const BookingForm = ({ setSubmittable }) => {
   const [form] = Form.useForm()
   const [service, setService] = useState("")
   const [addressVisible, setAddressVisible] = useState(false)

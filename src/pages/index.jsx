@@ -85,7 +85,7 @@ const IndexPage = () => {
         <section id="Services" style={{ paddingTop: "150px", paddingBottom:"60px", overflowX:"hidden"}}>
           <ServiceSection />
         </section>
-        <section id="Gallery" style={{ paddingTop: "40px", overflowX:"hidden"}}>
+        <section id="Gallery" style={{ paddingTop: "40px", paddingBottom:"60px", overflowX:"hidden"}}>
           <Gallery/>
         </section>
         <section id="Contact" style={{ paddingTop: "100px", paddingBottom: "100px", overflowX:"hidden"  }}>
