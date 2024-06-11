@@ -54,7 +54,7 @@ const HeroCarousel = () => {
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.3, delay:0.3 }} className="relative w-full mb-12">
                 <Carousel
-                    className="p-0 mx-auto w-[95%] lg:w-11/12 xl:w-10/12 2xl:w-9/12 lg:mt-12 sm:mt-7 mt-4"
+                    className="p-0 mx-auto w-[95%] lg:w-10/12 xl:w-9/12 2xl:w-8/12 lg:mt-12 sm:mt-7 mt-4"
                     arrows fade autoplay autoplaySpeed={3000} speed={1000} infinite>
                     {carouselItems.map((item, index) => (
                         <div key={index} className="relative flex items-center justify-center flex-col">

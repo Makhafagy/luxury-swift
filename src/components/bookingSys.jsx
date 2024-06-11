@@ -99,8 +99,8 @@ const BookingForm = ({setSubmittable}) => {
               <Select>
                 <Option value="none">None</Option>
                 <Option value="basic">Basic</Option>
-                <Option value="standard">Standard</Option>
-                <Option value="premium">Premium</Option>
+                <Option value="standard">Complete</Option>
+                <Option value="premium">Ultimate</Option>
               </Select>
             </Form.Item>
           </Col>
