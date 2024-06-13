@@ -7,9 +7,12 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs
-            .sendForm(process.env.GATSBY_SERVICE_ID, process.env.GATSBY_TEMPLATE_ID, form.current, {
-                publicKey: process.env.GATSBY_PUBLIC_KEY,
-            })
+            .sendForm(
+                process.env.GATSBY_SERVICE_ID,
+                process.env.GATSBY_TEMPLATE_ID,
+                form.current,
+                process.env.GATSBY_PUBLIC_KEY
+            )
             .then(
                 () => {
                     console.log('SUCCESS!');

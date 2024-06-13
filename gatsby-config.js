@@ -1,7 +1,6 @@
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env.${process.env.NODE_ENV}`, // This loads the appropriate .env file
 })
-
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
