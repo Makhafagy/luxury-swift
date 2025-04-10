@@ -1,4 +1,0 @@
-[ZoneTransfer]
-ZoneId=3
-ReferrerUrl=https://cloudconvert.com/
-HostUrl=https://eu-central.storage.cloudconvert.com/tasks/131f4e11-4a1e-48d1-9425-4fd389755e21/car-wash.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20240609%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20240609T023257Z&X-Amz-Expires=86400&X-Amz-Signature=35cc5a57456374764786d3746363f2b9516807c5514580f5b78eb2bd78258345&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22car-wash.webp%22&response-content-type=image%2Fwebp&x-id=GetObject

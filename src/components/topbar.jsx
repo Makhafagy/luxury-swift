@@ -20,7 +20,7 @@ class TopBar extends Component {
     return (
       <>
         <span className="font-sans">
-          <Marquee>123 Canada st, Toronto, ON Canada</Marquee>
+          <Marquee>123 NIGGER st, NIGGER, CA USA</Marquee>
         </span>
         
       </>

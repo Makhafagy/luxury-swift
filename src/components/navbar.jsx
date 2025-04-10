@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import AppBar from "@mui/material/AppBar"
 import Toolbar from "@mui/material/Toolbar"
 import Typography from "@mui/material/Typography"
@@ -12,9 +12,8 @@ import ListItemButton from "@mui/material/ListItemButton"
 import ListItemText from "@mui/material/ListItemText"
 import IconButton from "@mui/material/IconButton"
 import MenuIcon from "@mui/icons-material/Menu"
-import BusinessName1 from "../images/nav-logo.webp"
+import BusinessName1 from "../images/luxury-swift-logo.webp"
 import ModalIndex from "./modal"
-
 
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
@@ -43,34 +42,33 @@ const LinksStyle = styled.a`
   position: relative;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
-    bottom: -2px; 
-    width: 0; 
-    height: 2px; 
-    background-color: transparent; 
-    transition: width 0.4s ease; 
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.4s ease;
   }
 
   &:hover:after {
-    width: 100%; 
-    background-color: #228be6; 
+    width: 100%;
+    background-color: #228be6;
   }
 `
 const drawerWidth = 240
 
 const AppNavBar = ({ window, links = [] }) => {
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false)
   const handleDrawerToggle = () => {
     setMobileOpen(prevState => !prevState)
   }
 
-
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h5" sx={{ my: 2 }}>
-        Auto Detail
+        Luxury Swift
       </Typography>
       <Divider />
       <List>
@@ -90,7 +88,6 @@ const AppNavBar = ({ window, links = [] }) => {
 
   return (
     <Box sx={{ display: "flex" }}>
-      
       <AppBarStyle>
         <Toolbar sx={{ marginTop: "auto", marginBottom: "auto" }}>
           <IconButton
@@ -103,7 +100,12 @@ const AppNavBar = ({ window, links = [] }) => {
           </IconButton>
           <Typography variant="h6" component="div">
             <a href="/">
-              <img loading="lazy" src={BusinessName1} className="w-36 sm:w-56" alt="logo" />
+              <img
+                loading="lazy"
+                src={BusinessName1}
+                alt="logo"
+                className="h-[70px] w-auto"
+              />
             </a>
           </Typography>
 
@@ -116,12 +118,13 @@ const AppNavBar = ({ window, links = [] }) => {
             style={{ marginLeft: "auto" }}
           >
             {links.map((v, i) => (
-              <LinksStyle disabled={v.disabled} key={i} href={v.href}>{v.label}</LinksStyle>
+              <LinksStyle disabled={v.disabled} key={i} href={v.href}>
+                {v.label}
+              </LinksStyle>
             ))}
             <span className="ms-4">
               <ModalIndex />
             </span>
-
           </Box>
           <Box
             sx={{ mr: 2, display: { md: "none" } }}
@@ -133,7 +136,7 @@ const AppNavBar = ({ window, links = [] }) => {
           </Box>
         </Toolbar>
       </AppBarStyle>
-      
+
       <nav>
         <Drawer
           container={container}
@@ -155,7 +158,6 @@ const AppNavBar = ({ window, links = [] }) => {
         </Drawer>
       </nav>
     </Box>
-
   )
 }
-export default AppNavBar;
+export default AppNavBar

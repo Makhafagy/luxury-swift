@@ -10,30 +10,31 @@ import { motion } from 'framer-motion'
 
 const carouselItems = [
     {
-        image: Carousel1,
-        heading: "Washing & Detailing",
-        subheading: "Keep your Car Newer",
-        text: "Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris.",
-        buttonText: "Explore More",
-        buttonLink: "#About",
+      image: Carousel1,
+      heading: "Washing & Detailing",
+      subheading: "Keep your Car Newer",
+      text: "Your car deserves the best. Let us take care of it with expert detailing and care.",
+      buttonText: "Explore More",
+      buttonLink: "#About",
     },
     {
-        image: Carousel2,
-        heading: "Washing & Detailing",
-        subheading: "Quality service for you",
-        text: "Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna.",
-        buttonText: "Explore Services",
-        buttonLink: "#Service",
+      image: Carousel2,
+      heading: "Washing & Detailing",
+      subheading: "Quality service for you",
+      text: "Get the attention your vehicle needs with our top-tier cleaning services and precision work.",
+      buttonText: "Explore Services",
+      buttonLink: "#Service",
     },
     {
-        image: Carousel3,
-        heading: "Washing & Detailing",
-        subheading: "Exterior & Interior Washing",
-        text: "Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor.",
-        buttonText: "Explore Packages",
-        buttonLink: "#Packages",
+      image: Carousel3,
+      heading: "Washing & Detailing",
+      subheading: "Exterior & Interior Washing",
+      text: "We ensure a spotless finish inside and out — restoring that fresh, showroom look.",
+      buttonText: "Explore Packages",
+      buttonLink: "#Packages",
     },
-];
+  ];
+  
 
 const HeroCarousel = () => {
     return (

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion"
 const LeftHalf = styled.div`
   min-height: 410px;
   box-sizing: border-box;
@@ -52,20 +52,21 @@ const AboutUs = () => {
         Why Choose Us
       </div>
       <div className="text-lg text-center text-gray-500 mb-12 mx-6 md:mx-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        We deliver premium car care services with attention to detail, trusted
+        expertise, and a passion for perfection.
       </div>
       <motion.div
-        initial={{ opacity: 0, y:-10 }}
-        whileInView={{ opacity: 1, y:0 }}
-        viewport={{ once: true, amount:0.5 }}
-        transition={{duration:0.3}}
-        className="max-w-screen-lg mx-auto w-11/12 sm:w-10/12 lg:w-9/12 xl:w-8/12">
-
+        initial={{ opacity: 0, y: -10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.3 }}
+        className="max-w-screen-lg mx-auto w-11/12 sm:w-10/12 lg:w-9/12 xl:w-8/12"
+      >
         <div className="flex flex-wrap">
           <LeftHalf className="w-full md:w-5/12">
             <Title className="flex">
               <div className="text-base/7 p-4">
-                ABOUT US <br /> <SecondTitle>#1 in Toronto</SecondTitle>
+                ABOUT US <br /> <SecondTitle>#1 FOR NIGGERS</SecondTitle>
               </div>
             </Title>
 
@@ -80,9 +81,7 @@ const AboutUs = () => {
 
           <div className="w-full md:w-7/12 carpic" />
         </div>
-
       </motion.div>
-
     </>
   )
 }

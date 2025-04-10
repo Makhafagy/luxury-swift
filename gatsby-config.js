@@ -6,7 +6,7 @@ require("dotenv").config({
  */
 module.exports = {
   siteMetadata: {
-    title: `AutoDetailTemplate`,
+    title: `LuxurySwift`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
@@ -14,17 +14,15 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    
+
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
         path: "./src/images",
-        icon:"src/images/steering-wheel.png"
+        icon: "src/images/steering-wheel.png",
       },
       __key: "images",
     },
-
   ],
-  
 }

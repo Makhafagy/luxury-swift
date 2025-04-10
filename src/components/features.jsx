@@ -71,7 +71,7 @@ const mockdata = [
     icon: IconCalendarPlus,
     title: "Book Online Now",
     description:
-      "Lock in your car detailing appointment with ease by booking online with Auto Detail.",
+      "Lock in your car detailing appointment with ease by booking online with Luxury Swift.",
   },
 ]
 
