@@ -66,7 +66,10 @@ const AboutUs = () => {
           <LeftHalf className="w-full md:w-5/12">
             <Title className="flex">
               <div className="text-base/7 p-4">
-                ABOUT US <br /> <SecondTitle>#1 FOR NIGGERS</SecondTitle>
+                ABOUT US <br />
+                <SecondTitle>
+                  Premium Detailing with a Personal Touch
+                </SecondTitle>
               </div>
             </Title>
 

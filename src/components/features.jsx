@@ -25,10 +25,10 @@ const SectionTitles = styled.div`
 function Feature({ icon: Icon, title, description, className, ...others }) {
   return (
     <motion.div
-    initial={{ opacity: 0, x:-40 }}
-    whileInView={{ opacity: 1, x:0 }}
-    viewport={{ once: true, amount:0.4}}
-    transition={{duration:0.3, delay:0.6}}
+      initial={{ opacity: 0, x: -40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.4 }}
+      transition={{ duration: 0.3, delay: 0.6 }}
       className={classes.feature}
       {...others}
     >
@@ -57,9 +57,9 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
 const mockdata = [
   {
     icon: IconTruck,
-    title: "Mobile & On Site Services",
+    title: "100% Mobile Services",
     description:
-      "We provide top-tier car detailing directly to you. With both on-site and mobile options.",
+      "We bring professional car detailing straight to your location—no shop visit needed.",
   },
   {
     icon: IconCoin,

@@ -10,7 +10,7 @@ const Packages = () => {
         Pricing
       </div>
       <div className="text-3xl text-center uppercase mb-8 lg:text-5xl">
-        Our Packages
+        Our Services
       </div>
       <div className="text-lg text-center text-gray-500 mb-12 mx-6 md:mx-3">
         Choose from a range of professional detailing packages designed to fit
@@ -29,12 +29,12 @@ const Packages = () => {
                 Deep cleaning of your car’s interior to restore freshness and
                 remove built-up dirt and odors.
               </div>
-              <div className="text-4xl mb-4">
+              {/* <div className="text-4xl mb-4">
                 $125 <span className="text-base text-gray-500">/ Starting</span>
-              </div>
+              </div> */}
               <ItemArray text={["Full Interior & Trunk Vacuum"]} />
               <ItemArray text={["Full Wipe Down & Detail Brush Treatment"]} />
-              <ItemArray text={["Advanced Steam Clean"]} />
+              {/* <ItemArray text={["Advanced Steam Clean"]} /> */}
               <ItemArray text={["Full Seat and Carpet Shampoo"]} />
               <ItemArray text={["Windows clean"]} />
               <ItemArray text={["Fabric Mat Shampoo"]} />
@@ -42,40 +42,37 @@ const Packages = () => {
               <ItemArray text={["Carpet Salt Stain Removal"]} />
               <ItemArray text={["Full Interior Protectant"]} />
               <ItemArray text={["Air Freshener"]} />
-              <ItemArrayX text={["5 Stage Foam Cannon Wash"]} />
+              {/* <ItemArrayX text={["5 Stage Foam Cannon Wash"]} />
               <ItemArrayX text={["Wheel, Rim & Tire Clean"]} />
               <ItemArrayX text={["Premium Towel Dry"]} />
               <ItemArrayX text={["Salt Protection on Carpets"]} />
               <ItemArrayX text={["Clay Bar Restoration"]} />
               <ItemArrayX text={["1 Step Paint Polish"]} />
               <ItemArrayX text={["Premium Ceramic Wax"]} />
-              <ItemArrayX text={["Odor Removal"]} />
+              <ItemArrayX text={["Odor Removal"]} /> */}
 
               <div className="text-center py-4">
                 <ModalIndex />
               </div>
-              <div className="text-center text-base text-gray-500">
+              {/* <div className="text-center text-base text-gray-500">
                 XL SUVs $145 & Vans/Trucks $155
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="w-11/12 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-1 mb-6">
             <div className="relative p-10 rounded-lg border shadow-md bg-zinc-900 text-gray-200">
-              <div className="absolute top-0 right-0 mt-0 mr-7 px-4 py-2 bg-[#e9e8e8] text-black font-semibold rounded-b-lg">
+              {/* <div className="absolute top-0 right-0 mt-0 mr-7 px-4 py-2 bg-[#e9e8e8] text-black font-semibold rounded-b-lg">
                 Best Deal
-              </div>
+              </div> */}
               <div className="text-xl font-medium py-2 flex items-center">
                 <i className="mr-2 bi bi-circle-half" />
-                Complete Detail
+                Exterior Detail
               </div>
-              <div className="text-base mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.
-              </div>
-              <div className="text-4xl mb-4">
+              <div className="text-base mb-4">Full outside car refresh.</div>
+              {/* <div className="text-4xl mb-4">
                 $170 <span className="text-base text-gray-400">/ Starting</span>
-              </div>
-              <ItemArrayB text={["Full Interior & Trunk Vacuum"]} />
+              </div> */}
+              {/* <ItemArrayB text={["Full Interior & Trunk Vacuum"]} />
               <ItemArrayB text={["Full Wipe Down & Detail Brush Treatment"]} />
               <ItemArrayB text={["Advanced Steam Clean"]} />
               <ItemArrayB text={["Full Seat and Carpet Shampoo"]} />
@@ -84,37 +81,36 @@ const Packages = () => {
               <ItemArrayB text={["Rubber Mats Clean"]} />
               <ItemArrayB text={["Carpet Salt Stain Removal"]} />
               <ItemArrayB text={["Full Interior Protectant"]} />
-              <ItemArrayB text={["Air Freshener"]} />
+              <ItemArrayB text={["Air Freshener"]} /> */}
               <ItemArrayB text={["5 Stage Foam Cannon Wash"]} />
               <ItemArrayB text={["Wheel, Rim & Tire Clean"]} />
-              <ItemArrayB text={["Premium Towel Dry"]} />
-              <ItemArrayBX text={["Salt Protection on Carpets"]} />
+              <ItemArrayB text={["Premium Towel Dry"]} />{" "}
+              <ItemArrayB text={["Wax"]} />
+              <ItemArrayB text={["Premium Wax"]} />
+              {/* <ItemArrayBX text={["Salt Protection on Carpets"]} />
               <ItemArrayBX text={["Clay Bar Restoration"]} />
               <ItemArrayBX text={["1 Step Paint Polish"]} />
               <ItemArrayBX text={["Premium Ceramic Wax"]} />
-              <ItemArrayBX text={["Odor Removal"]} />
+              <ItemArrayBX text={["Odor Removal"]} /> */}
               <div className="text-center py-4">
                 <ModalIndex />
               </div>
-              <div className="text-center text-base text-gray-300">
+              {/* <div className="text-center text-base text-gray-300">
                 XL SUVs $190 & Vans/Trucks $200
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="w-11/12 sm:w-4/5 md:w-2/3 lg:w-1/3 mx-auto px-1 mb-6">
             <div className="relative p-10 rounded-lg border border-slate-400 shadow-md bg-white">
               <div className="text-xl font-medium py-2 flex items-center">
                 <i className="mr-2 bi bi-circle-half" />
-                Ultimate Detail
+                Custom Detail
               </div>
-              <div className="text-base mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.
-              </div>
-              <div className="text-4xl mb-4">
+              <div className="text-base mb-4">Request Detailing.</div>
+              {/* <div className="text-4xl mb-4">
                 $260 <span className="text-base text-gray-400">/ Starting</span>
-              </div>
-              <ItemArray text={["Full Interior & Trunk Vacuum"]} />
+              </div> */}
+              {/* <ItemArray text={["Full Interior & Trunk Vacuum"]} />
               <ItemArray text={["Full Wipe Down & Detail Brush Treatment"]} />
               <ItemArray text={["Advanced Steam Clean"]} />
               <ItemArray text={["Full Seat and Carpet Shampoo"]} />
@@ -131,13 +127,13 @@ const Packages = () => {
               <ItemArray text={["Clay Bar Restoration"]} />
               <ItemArray text={["1 Step Paint Polish"]} />
               <ItemArray text={["Premium Ceramic Wax"]} />
-              <ItemArray text={["Odor Removal"]} />
+              <ItemArray text={["Odor Removal"]} /> */}
               <div className="text-center py-4">
                 <ModalIndex />
               </div>
-              <div className="text-center text-base text-gray-500">
+              {/* <div className="text-center text-base text-gray-500">
                 XL SUVs $280 & Vans/Trucks $290
-              </div>
+              </div> */}
             </div>
           </div>
           {/* <div className="w-full md:w-1/2 xl:w-1/4 px-3 mb-6">

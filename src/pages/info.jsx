@@ -1,26 +1,15 @@
-import React from 'react'
-import AppNavBar from '../components/navbar'
-import { FaqSimple } from '../components/faq'
-import Terms from '../components/terms'
-import { FooterLinks } from '../components/footer'
+import React from "react"
+import AppNavBar from "../components/navbar"
+import { FaqSimple } from "../components/faq"
+import Terms from "../components/terms"
+import { FooterLinks } from "../components/footer"
 
 const data = [
   {
     title: "About",
     links: [
-      { label: "Testimonial", href: "/#Testimonial" },
-      { label: "Stats", href: "/#Stats" },
-      { label: "FAQ", href: "#FAQ" },
-      { label: "Terms & Conditions", href: "#Terms" },
-    ],
-  },
-  {
-    title: "Services",
-    links: [
-      { label: "Packages", href: "/#Packages" },
-      { label: "Add-ons", href: "#" },
-      { label: "Headlight Restoration", href: "/#Services" },
-      { label: "Ceramic Coating", href: "/#Services" },
+      { label: "FAQ", href: "/info/#FAQ" },
+      { label: "Terms & Conditions", href: "/info" },
     ],
   },
   {
@@ -46,15 +35,15 @@ const InfoPage = () => {
         <section>
           <AppNavBar links={links} />
         </section>
-        <section id='Terms' style={{ paddingTop: "150px" }}>
+        <section id="Terms" style={{ paddingTop: "150px" }}>
           <Terms />
         </section>
 
-        <section id="FAQ" className='sm:w-5/6 mx-auto'>
+        <section id="FAQ" className="sm:w-5/6 mx-auto">
           <FaqSimple />
         </section>
         <section>
-          <FooterLinks footerLinks={data}/>
+          <FooterLinks footerLinks={data} />
         </section>
       </div>
     </>

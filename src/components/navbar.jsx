@@ -30,7 +30,9 @@ const AppBarStyle = styled(AppBar)`
   background: #181818;
   position: fixed;
   align-self: center;
-  /* border-top: 1px solid #242424; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px; // Adjust the left and right margins for the navbar
 `
 
 const LinksStyle = styled.a`
@@ -89,7 +91,7 @@ const AppNavBar = ({ window, links = [] }) => {
   return (
     <Box sx={{ display: "flex" }}>
       <AppBarStyle>
-        <Toolbar sx={{ marginTop: "auto", marginBottom: "auto" }}>
+        <Toolbar sx={{ display: "flex", alignItems: "center" }}>
           <IconButton
             aria-label="open drawer"
             edge="start"
@@ -99,12 +101,22 @@ const AppNavBar = ({ window, links = [] }) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div">
-            <a href="/">
+            <a
+              href="/"
+              style={{
+                display: "inline-block",
+                height: "120px", // Make sure the anchor height matches the logo's height
+              }}
+            >
               <img
                 loading="lazy"
                 src={BusinessName1}
                 alt="logo"
-                className="h-[70px] w-auto"
+                className="h-[110px] md:h-[130px] w-auto"
+                style={{
+                  display: "block",
+                  marginBottom: 0,
+                }}
               />
             </a>
           </Typography>

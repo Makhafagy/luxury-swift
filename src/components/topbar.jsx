@@ -20,9 +20,8 @@ class TopBar extends Component {
     return (
       <>
         <span className="font-sans">
-          <Marquee>123 NIGGER st, NIGGER, CA USA</Marquee>
+          <Marquee>Anywhere, CA USA</Marquee>
         </span>
-        
       </>
 
       // <div className="bg-[#228be6] fixed z-50 w-full">
@@ -45,7 +44,7 @@ class TopBar extends Component {
       //         </div>
       //         <div className="text-white font-light flex items-center">
       //           <Icon
-      //             href="mailto:mah.hussaina@gmail.com"
+      //             href="mailto:Luxuryswiftdetailing@gmail.com"
       //             className="bi bi-envelope-fill mr-2"
       //           />
       //           <span className="hidden md:flex font-sans">Email Us</span>
