@@ -12,21 +12,25 @@ const data = [
     title: "About",
     links: [
       { label: "FAQ", href: "/info/#FAQ" },
-      { label: "Terms & Conditions", href: "/info" },
+      { label: "Terms & Conditions", href: "/info/#Terms" },
     ],
   },
   {
     title: "Socials",
     links: [
-      { label: "Write a review", href: "#" },
-      { label: "Follow on instagram", href: "#" },
-      { label: "Our Facebook page", href: "#" },
-      { label: "Check our Tiktok", href: "#" },
+      {
+        label: "Follow on instagram",
+        href: "https://www.instagram.com/luxuryswift_autodetailing/",
+      },
+      {
+        label: "Check our Tiktok",
+        href: "https://www.tiktok.com/@luxuryswift_detailing",
+      },
     ],
   },
 ]
 const links = [
-  { label: "Pricing", href: "#Packages" },
+  { label: "Packages", href: "#Packages" },
   { label: "Gallery", href: "#Gallery" },
   { label: "Contact", href: "#Contact" },
 ]

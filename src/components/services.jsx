@@ -5,7 +5,7 @@ import Icon2 from '../images/car.webp';
 import Icon3 from '../images/car-wash.webp';
 import Icon4 from '../images/ceramic-coating.webp';
 import { motion } from 'framer-motion';
-import ModalIndex from './modal';
+import ModalIndex from './bookingSys';
 
 const IndexPage = () => {
   const services = [

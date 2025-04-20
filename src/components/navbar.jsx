@@ -13,7 +13,7 @@ import ListItemText from "@mui/material/ListItemText"
 import IconButton from "@mui/material/IconButton"
 import MenuIcon from "@mui/icons-material/Menu"
 import BusinessName1 from "../images/luxury-swift-logo.webp"
-import ModalIndex from "./modal"
+import ModalIndex from "./bookingSys"
 
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
